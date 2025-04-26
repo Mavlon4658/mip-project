@@ -111,3 +111,185 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 // Home end
 
 // Alohida
+
+.section_margin {
+    margin-top: 100px;
+}
+
+
+// about
+.about {
+    margin-top: 100px;
+
+    .container {
+        display: flex;
+
+        @include media(1100) {
+            flex-direction: column;
+        }
+    }
+
+    &_text {
+        width: 620px;
+        padding: 37px 40px 70px 40px;
+        background: #ECEFF6;
+
+        @include media(1100) {
+            padding: 36px;
+            width: 100%;
+            height: 512px;
+        }
+
+        @include media(700) {
+            padding: 20px;
+            height: 450px;
+        }
+
+        h6 {
+            font-family: $font-noah;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 100%;
+            color: #465068;
+            margin-bottom: 30px;
+
+            @include media(1100) {
+                margin-bottom: 24px;
+                font-size: 40px;
+                line-height: 42px;
+            }
+
+            @include media(700) {
+                margin-bottom: 12px;
+                font-size: 24px;
+                line-height: 100%;
+            }
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            color: #465068;
+            max-width: 450px;
+            padding-right: 15px;
+
+            @include media(1100) {
+                max-width: 100%;
+                padding-right: 30px;
+            }
+
+            @include media(700) {
+                font-size: 16px;
+                line-height: 130%;
+            }
+        }
+    }
+
+    &_main_text {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 103px;
+            width: 100%;
+            z-index: 2;
+            background: linear-gradient(180deg, rgba(236, 239, 246, 0) 0%, #ECEFF6 90%);
+        }
+    }
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        overflow-y: scroll;
+        max-height: 470px;
+
+        @include media(1100) {
+            max-height: 374px;
+            gap: 24px;
+        }
+
+        @include media(700) {
+            gap: 12px;
+        }
+
+        &::-webkit-scrollbar {
+            display: block;
+            width: 2px;
+            background: #FFFFFFCC;
+            border-radius: 0;
+        }
+
+        &::-webkit-scrollbar-track {
+            display: block;
+            width: 2px;
+            border-radius: 0;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #F92F43;
+            width: 100%;
+        }
+    }
+
+    &_img {
+        width: 900px;
+        position: relative;
+
+        @include media(1100) {
+            width: 100%;
+            height: 380px;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &_play {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #F92F43;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include media(1100) {
+            width: 64px;
+            height: 64px;
+        }
+
+        @include media(700) {
+            width: 40px;
+            height: 40px;
+        }
+
+        svg {
+            transform: translateX(5px);
+
+            @include media(1100) {
+                width: 22px;
+                height: 19.2px;
+            }
+
+            @include media(700) {
+                width: 14px;
+                height: 12px;
+                transform: translateX(2px);
+            }
+        }
+    }
+}
+// about
