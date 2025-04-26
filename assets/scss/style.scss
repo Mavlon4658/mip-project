@@ -1,0 +1,113 @@
+@import './normalize',
+        './global';
+
+body {
+    background: white;
+    color: #465068;
+    font-weight: 700;
+    font-family: $font-noah;
+}
+
+button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
+    font-family: $font-noah;
+    font-weight: 700;
+    color: #465068;
+}
+
+.btn {
+    &-red {
+        background: #F92F43;
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 24px;
+        line-height: 30px;
+        padding: 15px;
+    }
+}
+
+.container {
+    max-width: 1520px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+// Breadcrumb
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 8px;
+
+    a {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 110%;
+    }
+}
+// Breadcrumb end
+
+// Home
+.home {
+    padding-top: 40px;
+
+    &-container {
+        background: #ECEFF6;
+        padding: 40px;
+    }
+
+    .breadcrumb {
+        margin-bottom: 28px;
+    }
+
+    &-link {
+        display: flex;
+        align-items: stretch;
+        gap: 2px;
+        margin-bottom: 76px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 11px 20px 13px;
+            font-size: 18px;
+            line-height: 22px;
+            background: white;
+
+            &.active {
+                padding-left: 42px;
+                background: #465068;
+                color: white;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 12px;
+                    height: 12px;
+                    background: #F92F43;
+                    left: 20px;
+                    top: 16px;
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: 80px;
+        line-height: 80%;
+        margin-bottom: 30px;
+    }
+
+    .description {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 110%;
+    }
+}
+// Home end
+
+// Alohida
