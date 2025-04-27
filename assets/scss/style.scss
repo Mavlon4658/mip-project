@@ -112,14 +112,45 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
 // Alohida
 
-.section_margin {
-    margin-top: 100px;
-}
+.section_title {
+    font-family: $font-noah;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 100%;
+    color: #465068;
+    display: flex;
+    align-items: start;
+    gap: 10px;
 
+    @include media(1100) {
+        font-size: 54px;
+        line-height: 100%;
+    }
+
+    @include media(700) {
+        font-size: 28px;
+    }
+
+    span {
+        width: 24px;
+        height: 24px;
+        background: #F92F43;
+        display: flex;
+        flex-shrink: 0;
+    }
+}
 
 // about
 .about {
-    margin-top: 100px;
+    padding-top: 100px;
+
+    @include media(1100) {
+        padding-top: 96px;
+    }
+
+    @include media(700) {
+        padding-top: 60px;
+    }
 
     .container {
         display: flex;
@@ -293,3 +324,123 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     }
 }
 // about
+
+// program
+.program {
+    padding-top: 100px;
+
+    @include media(1100) {
+        padding-top: 96px;
+    }
+
+    @include media(700) {
+        padding-top: 60px;
+    }
+
+    .section_title {
+        margin-bottom: 80px;
+
+        @include media(1100) {
+            margin-bottom: 40px;
+        }
+
+        @include media(700) {
+            margin-bottom: 20px;
+        }
+    }
+}
+// program
+
+// career
+.career {
+
+    &_blocks {
+        background: #ECEFF6;
+        display: flex;
+        gap: 64px;
+        padding: 35px 64px 43px 40px;
+        margin-top: 80px;
+
+        @include media(1100) {
+            flex-direction: column;
+            margin-top: 40px;
+            gap: 72px;
+        }
+    }
+
+    &_logos {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+
+    &_logo {
+        padding: 10px;
+        height: 100px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &_left {
+        width: 680px;
+
+        @include media(1100) {
+            width: 100%;
+        }
+    }
+
+    &_right {
+        width: 632px;
+
+        @include media(1100) {
+            width: 100%;
+        }
+    }
+
+    &_img {
+        position: relative;
+        bottom: -5px;
+        height: 331px;
+    }
+
+    &_bg {
+        position: absolute;
+        left: -40px;
+        width: calc(100% + 80px);
+        top: 0;
+        max-width: 760px;
+        height: 347px;
+        object-fit: cover;
+    }
+
+    &_woman {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    h6 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        margin-bottom: 30px;
+        color: #465068;
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 120%;
+        color: #465068;
+    }
+
+    .career_text {
+        margin-bottom: 30px;
+    }
+}
+// career
