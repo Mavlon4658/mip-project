@@ -788,6 +788,8 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
     @include media(700) {
         font-size: 28px;
+        flex-direction: column;
+        gap: 12px;
     }
 
     span {
@@ -796,6 +798,11 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         background: #F92F43;
         display: flex;
         flex-shrink: 0;
+
+        @include media(700) {
+            width: 16px;
+            height: 16px;
+        }
     }
 }
 
