@@ -519,3 +519,92 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     }
 }
 // career
+
+// diploma
+.diploma {
+    margin-top: 100px;
+
+    &_in {
+        padding: 37px 40px 40px 40px;
+        background: #465068;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        @include media(1100) {
+            padding: 36px;
+            gap: 36px;
+            flex-direction: column;
+            position: relative;
+        }
+    }
+
+    &_left {
+        width: 433px;
+        position: relative;
+        z-index: 2;
+        box-sizing: border-box;
+
+        @include media(1100) {
+            width: 100%;
+            position: static;
+        }
+
+        h6 {
+            font-family: $font-noah;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 100%;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 120%;
+            color: #fff;
+        }
+
+        .btn-red {
+            margin-top: 203px;
+
+            @include media(1100) {
+                z-index: 2;
+                margin-top: 0;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                // width: calc(100% - 40px);
+            }
+        }
+    }
+
+    &_right {
+        position: relative;
+
+        .img_diploma_in {
+            width: 586px;
+
+            @include media(1100) {
+                width: 100%;
+                padding-bottom: 150px;
+            }
+        }
+
+        .diploma_img {
+            position: absolute;
+            bottom: -98px;
+            left: -302px;
+            width: 434px;
+
+            @include media(1100) {
+                left: 0;
+                right: 0;
+                bottom: -35px;
+                margin: auto;
+            }
+        }
+    }
+}
+// diploma
