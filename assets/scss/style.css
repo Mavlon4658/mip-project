@@ -1225,6 +1225,11 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .diploma {
   margin-top: 100px;
 }
+@media screen and (max-width: 993px) {
+  .diploma {
+    margin-top: 60px;
+  }
+}
 .diploma_in {
   padding: 37px 40px 40px 40px;
   background: #465068;
@@ -1238,6 +1243,11 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     gap: 36px;
     flex-direction: column;
     position: relative;
+  }
+}
+@media screen and (max-width: 993px) {
+  .diploma_in {
+    padding: 20px;
   }
 }
 .diploma_left {
@@ -1260,11 +1270,29 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   color: #fff;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1100px) {
+  .diploma_left h6 {
+    font-size: 40px;
+    line-height: 42px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 993px) {
+  .diploma_left h6 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+}
 .diploma_left p {
   font-weight: 400;
   font-size: 18px;
   line-height: 120%;
   color: #fff;
+}
+@media screen and (max-width: 993px) {
+  .diploma_left p {
+    font-size: 16px;
+  }
 }
 .diploma_left .btn-red {
   margin-top: 203px;
@@ -1274,8 +1302,16 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     z-index: 2;
     margin-top: 0;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 36px;
+    left: 36px;
+    width: calc(100% - 72px);
+  }
+}
+@media screen and (max-width: 993px) {
+  .diploma_left .btn-red {
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
   }
 }
 .diploma_right {
@@ -1290,6 +1326,11 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     padding-bottom: 150px;
   }
 }
+@media screen and (max-width: 993px) {
+  .diploma_right .img_diploma_in {
+    padding-bottom: 118px;
+  }
+}
 .diploma_right .diploma_img {
   position: absolute;
   bottom: -98px;
@@ -1302,5 +1343,11 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: -35px;
     margin: auto;
+  }
+}
+@media screen and (max-width: 993px) {
+  .diploma_right .diploma_img {
+    width: 168px;
+    bottom: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

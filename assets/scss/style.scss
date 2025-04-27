@@ -102,16 +102,16 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     @include media(700) {
         padding-top: 0;
     }
-    
+
     &-container {
         background: #ECEFF6;
         padding: 40px;
-        
+
         @include media(1100) {
             width: 100%;
             padding: 36px 56px;
         }
-    
+
         @include media(700) {
             padding: 40px 20px 60px;
         }
@@ -150,7 +150,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             @include media(1180) {
                 width: 100%;
             }
-            
+
             img {
                 width: 100%;
             }
@@ -268,7 +268,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 display: none;
             }
         }
-        
+
         li {
             background: white;
             width: 25%;
@@ -323,7 +323,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         font-size: 20px;
         font-weight: 400;
         line-height: 110%;
-        
+
     }
 }
 // Home end
@@ -355,7 +355,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             padding: 36px 36px 257px;
             gap: 24px;
         }
-        
+
         @include media(700) {
             box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
             padding: 20px 20px 191px;
@@ -489,7 +489,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 background: #F92F43;
             }
         }
-        
+
         &::before {
             content: "";
             position: absolute;
@@ -504,7 +504,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 width: 4px;
             }
         }
-        
+
         &-wrap {
             margin: 77px 0 40px;
             display: flex;
@@ -645,7 +645,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
         &__left {
             width: 50%;
-            
+
             img {
                 mix-blend-mode: multiply;
                 width: 200px;
@@ -662,7 +662,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 font-weight: 400;
             }
         }
-        
+
         &__right {
             width: 50%;
 
@@ -681,7 +681,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     &-swp {
         margin: 75px 0 100px;
     }
-    
+
     .swiper {
         padding-bottom: 46px;
 
@@ -706,7 +706,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 width: 100%;
                 height: 319px;
                 overflow: hidden;
-                
+
                 img {
                     width: 100%;
                     height: 100%;
@@ -769,7 +769,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 // Leader end
 
-// Alohida 
+// Alohida
 
 .section_title {
     font-family: $font-noah;
@@ -1183,6 +1183,10 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .diploma {
     margin-top: 100px;
 
+    @include media(993) {
+        margin-top: 60px;
+    }
+
     &_in {
         padding: 37px 40px 40px 40px;
         background: #465068;
@@ -1195,6 +1199,10 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             gap: 36px;
             flex-direction: column;
             position: relative;
+        }
+
+        @include media(993) {
+            padding: 20px;
         }
     }
 
@@ -1216,6 +1224,17 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             line-height: 100%;
             color: #fff;
             margin-bottom: 30px;
+
+            @include media(1100) {
+                font-size: 40px;
+                line-height: 42px;
+                margin-bottom: 24px;
+            }
+
+            @include media(993) {
+                font-size: 24px;
+                margin-bottom: 12px;
+            }
         }
 
         p {
@@ -1223,6 +1242,10 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             font-size: 18px;
             line-height: 120%;
             color: #fff;
+
+            @include media(993) {
+                font-size: 16px;
+            }
         }
 
         .btn-red {
@@ -1232,9 +1255,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 z-index: 2;
                 margin-top: 0;
                 position: absolute;
-                bottom: 0;
-                left: 0;
-                // width: calc(100% - 40px);
+                bottom: 36px;
+                left: 36px;
+                width: calc(100% - 72px);
+            }
+
+            @include media(993) {
+                bottom: 20px;
+                left: 20px;
+                width: calc(100% - 40px);
             }
         }
     }
@@ -1249,6 +1278,10 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 width: 100%;
                 padding-bottom: 150px;
             }
+
+            @include media(993) {
+                padding-bottom: 118px;
+            }
         }
 
         .diploma_img {
@@ -1262,6 +1295,11 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 right: 0;
                 bottom: -35px;
                 margin: auto;
+            }
+
+            @include media(993) {
+                width: 168px;
+                bottom: 16px;
             }
         }
     }
