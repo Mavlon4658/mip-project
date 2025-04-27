@@ -15,3 +15,17 @@ if (phoneInp.length) {
         })
     });
 }
+
+const accordions = document.querySelectorAll('.accordion');
+
+if (accordions.length) {
+    accordions.forEach((item) => {
+        const accBtn = item.querySelector('.accordion-btn');
+        const accBody = item.querySelector('.accordion-body');
+    
+        accBtn.addEventListener('click', () => {
+            item.classList.toggle('active');
+            accBody.style.maxHeight = accBody.style.maxHeight ? null : accBody.scrollHeight + 'px';
+        });
+    });
+}

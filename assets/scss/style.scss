@@ -25,6 +25,39 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         font-size: 24px;
         line-height: 30px;
         padding: 15px;
+
+        @include media(700) {
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+
+.section_title {
+    font-family: $font-noah;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 100%;
+    color: #465068;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+
+    @include media(1100) {
+        font-size: 54px;
+        line-height: 100%;
+    }
+
+    @include media(700) {
+        font-size: 28px;
+    }
+
+    span {
+        width: 24px;
+        height: 24px;
+        background: #F92F43;
+        display: flex;
+        flex-shrink: 0;
     }
 }
 
@@ -45,6 +78,15 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         font-size: 16px;
         font-weight: 400;
         line-height: 110%;
+
+        @include media(700) {
+            font-size: 14px;
+            gap: 0px;
+
+            img {
+                margin: 0 -1px;
+            }
+        }
     }
 }
 // Breadcrumb end
@@ -53,13 +95,78 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .home {
     padding-top: 40px;
 
+    @include media(1100) {
+        padding-top: 20px;
+    }
+
+    @include media(700) {
+        padding-top: 0;
+    }
+    
     &-container {
         background: #ECEFF6;
         padding: 40px;
+        
+        @include media(1100) {
+            width: 100%;
+            padding: 36px 56px;
+        }
+    
+        @include media(700) {
+            padding: 40px 20px 60px;
+        }
+    }
+
+    &-content {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 85px;
+
+        @include media(1180) {
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        @include media(1100) {
+            margin-bottom: 24px;
+        }
+
+        @include media(700) {
+            gap: 40px;
+            margin-bottom: 67px;
+        }
+
+        &__left {
+            width: 50%;
+
+            @include media(1180) {
+                width: 100%;
+            }
+        }
+
+        &__right {
+            width: 50%;
+
+            @include media(1180) {
+                width: 100%;
+            }
+            
+            img {
+                width: 100%;
+            }
+        }
     }
 
     .breadcrumb {
         margin-bottom: 28px;
+
+        @include media(1100) {
+            margin-bottom: 24px;
+        }
+
+        @include media(700) {
+            margin-bottom: 16px;
+        }
     }
 
     &-link {
@@ -67,6 +174,14 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         align-items: stretch;
         gap: 2px;
         margin-bottom: 76px;
+
+        @include media(1100) {
+            margin-bottom: 24px;
+        }
+
+        @include media(700) {
+            margin-bottom: 44px;
+        }
 
         a {
             display: flex;
@@ -77,11 +192,21 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             line-height: 22px;
             background: white;
 
+            @include media(700) {
+                font-size: 14px;
+                line-height: 17px;
+                padding: 10px 12px 12px;
+            }
+
             &.active {
                 padding-left: 42px;
                 background: #465068;
                 color: white;
                 position: relative;
+
+                @include media(700) {
+                    padding-left: 30px;
+                }
 
                 &::before {
                     content: "";
@@ -91,6 +216,13 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                     background: #F92F43;
                     left: 20px;
                     top: 16px;
+
+                    @include media(700) {
+                        width: 8px;
+                        height: 8px;
+                        left: 12px;
+                        top: 14.5px;
+                    }
                 }
             }
         }
@@ -100,14 +232,541 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         font-size: 80px;
         line-height: 80%;
         margin-bottom: 30px;
+
+        @include media(1440) {
+            font-size: 72px;
+        }
+
+        @include media(1350) {
+            font-size: 64px;
+        }
+
+        @include media(1100) {
+            font-size: 66px;
+            margin-bottom: 24px;
+        }
+
+        @include media(700) {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-text {
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 20px;
+
+        @include media(1100) {
+            margin-bottom: 24px;
+            width: calc(100% + 116px);
+            margin-left: -56px;
+            padding: 0 56px;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        
+        li {
+            background: white;
+            width: 25%;
+            padding: 26px 29px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            @include media(1100) {
+                width: 328px;
+                flex-shrink: 0;
+                padding: 36px;
+            }
+
+            @include media(700) {
+                width: 320px;
+                padding: 20px;
+            }
+
+            &:not(:last-child) {
+                border-right: 2px solid #ECEFF6;
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 100%;
+            margin-bottom: 26px;
+
+            @include media(1100) {
+                margin-bottom: 24px;
+            }
+
+            @include media(700) {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 120%;
+
+            @include media(700) {
+                font-size: 16px;
+            }
+        }
     }
 
     .description {
         font-size: 20px;
         font-weight: 400;
         line-height: 110%;
+        
     }
 }
 // Home end
+
+// Accredited
+.accredited {
+    padding-top: 104px;
+
+    @include media(1100) {
+        padding-top: 96px;
+    }
+
+    @include media(700) {
+        padding-top: 60px;
+    }
+
+    &-container {
+        display: flex;
+        align-items: center;
+        // background: #ECEFF6;
+        padding: 36.75px 0 36.4px 41.71px;
+        gap: 30px;
+        position: relative;
+        z-index: 1;
+
+        @include media(1200) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 36px 36px 257px;
+            gap: 24px;
+        }
+        
+        @include media(700) {
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+            padding: 20px 20px 191px;
+        }
+    }
+
+    h2 {
+        max-width: 579px;
+        width: 100%;
+        font-size: 48px;
+        line-height: 100%;
+
+        @include media(1100) {
+            font-size: 40px;
+            max-width: 517px;
+        }
+
+        @include media(700) {
+            font-size: 24px;
+        }
+    }
+
+    .icon {
+        &-1 {
+            background: #F92F43;
+            padding: 7px 5.34px;
+
+            @include media(1100) {
+                padding: 5.56px 4.24px;
+
+                img {
+                    width: 164.52px;
+                }
+            }
+
+            @include media(700) {
+                padding: 3.98px 3.04px 4.55px;
+
+                img {
+                    width: 117.92px;
+                }
+            }
+        }
+    }
+
+    .bg-img {
+        &__1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: right center;
+            z-index: -1;
+
+            @include media(1200) {
+                display: none;
+            }
+
+            &.mb {
+                display: none;
+
+                @include media(1200) {
+                    display: block;
+                }
+
+                @include media(700) {
+                    display: none;
+                }
+            }
+
+            &.sm {
+                display: none;
+
+                @include media(700) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .main-img {
+        position: absolute;
+        bottom: 0;
+        right: 55px;
+        z-index: -1;
+
+        @include media(1450) {
+            width: 480px;
+            right: 0;
+        }
+
+        @include media(1200) {
+            width: 512px;
+            min-width: 512px;
+            right: 50%;
+            transform: translateX(50%);
+        }
+
+        @include media(700) {
+            width: 100%;
+            min-width: 100%;
+        }
+    }
+}
+// Accredited end
+
+// Treaning
+.treaning {
+    padding-top: 100px;
+
+    @include media(1100) {
+        padding-top: 96px;
+    }
+
+    @include media(700) {
+        padding-top: 60px;
+    }
+
+    .accordion {
+        background: #eceff6;
+        position: relative;
+        opacity: 0.5;
+        transition: .3s ease-in-out all;
+
+        &.active {
+            opacity: 1;
+
+            &::before {
+                background: #F92F43;
+            }
+        }
+        
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 8px;
+            height: 100%;
+            background: #465068;
+            transition: .3s ease-in-out all;
+
+            @include media(700) {
+                width: 4px;
+            }
+        }
+        
+        &-wrap {
+            margin: 77px 0 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            @include media(1100) {
+                margin: 40px 0 20px;
+            }
+
+            @include media(700) {
+                margin: 20px 0 12px;
+                gap: 12px;
+            }
+        }
+
+        &-btn {
+            width: 100%;
+            text-align: left;
+            padding: 40px 33px 40px 40px;
+            transition: .3s ease-in-out all;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 100%;
+
+            @include media(1100) {
+                padding: 32px 28px 32px 36px;
+            }
+
+            @include media(700) {
+                font-size: 20px;
+                padding: 20px 16px 20px 20px;
+                letter-spacing: -0.2px;
+            }
+        }
+
+        &-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+
+            &__item {
+                padding: 0 32px 40px;
+
+                @include media(700) {
+                    padding: 0 12px 20px 16px;
+                }
+            }
+
+            ul {
+                list-style-type: disc;
+                margin-left: 25px;
+
+                @include media(700) {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+            }
+
+            li {
+                font-size: 18px;
+                line-height: 120%;
+                font-weight: 400;
+
+                @include media(700) {
+                    font-size: 16px;
+                    line-height: 130%;
+                }
+            }
+        }
+    }
+
+    &-body {
+        background: #465068;
+        padding: 40px 40px 40px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 100px;
+
+        @include media(1100) {
+            flex-direction: column;
+            gap: 36px;
+            padding: 36px;
+            align-items: flex-start;
+            margin: 0;
+            padding: 20px;
+        }
+
+        p {
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 24px;
+            line-height: 100%;
+
+            @include media(1100) {
+                gap: 12px;
+            }
+
+            @include media(700) {
+                flex-direction: column;
+                align-items: flex-start;
+                font-size: 20px;
+            }
+
+            img {
+                flex-shrink: 0;
+
+                @include media(700) {
+                    width: 36px;
+                }
+            }
+        }
+
+        .btn-red {
+            width: 520px;
+            flex-shrink: 0;
+
+            @include media(1100) {
+                width: 100%;
+            }
+        }
+    }
+
+    &-foot {
+        background: #ECEFF6;
+        display: flex;
+        gap: 20px;
+        padding: 39px 36px 39px 40px;
+
+        @include media(1100) {
+            display: none;
+        }
+
+        &__left {
+            width: 50%;
+            
+            img {
+                mix-blend-mode: multiply;
+                width: 200px;
+                margin-bottom: 54px;
+            }
+
+            ul {
+                max-width: 553px;
+            }
+
+            li {
+                font-size: 18px;
+                line-height: 120%;
+                font-weight: 400;
+            }
+        }
+        
+        &__right {
+            width: 50%;
+
+            img {
+                mix-blend-mode: multiply;
+            }
+        }
+    }
+}
+// Treaning end
+
+// Leader
+.leader {
+    padding-top: 100px;
+
+    &-swp {
+        margin: 75px 0 100px;
+    }
+    
+    .swiper {
+        padding-bottom: 46px;
+
+        &-slide {
+            width: 980px;
+            height: auto;
+        }
+    }
+
+    &-card {
+        background: #ECEFF6;
+        height: 100%;
+        display: flex;
+        align-items: stretch;
+
+        &__left {
+            width: 360px;
+            flex-shrink: 0;
+            background: #465068;
+
+            .main-img {
+                width: 100%;
+                height: 319px;
+                overflow: hidden;
+                
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            h3 {
+                font-size: 28px;
+                line-height: 110%;
+                color: white;
+                padding: 32px 40px 43px 40px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 120%;
+                color: white;
+                padding: 0 40px 40px;
+            }
+        }
+
+        &__right {
+            padding: 40px 40px 35px 28px;
+            width: 100%;
+
+            h3 {
+                font-size: 24px;
+                line-height: 100%;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 120%;
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                padding-right: 37px;
+                height: 100%;
+                background: red;
+
+
+                ul {
+
+                    li {
+                        font-size: 20px;
+                        line-height: 110%;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}
+// Leader end
 
 // Alohida
