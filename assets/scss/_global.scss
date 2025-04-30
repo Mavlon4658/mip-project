@@ -30,3 +30,32 @@ $font-noah: "Noah", sans-serif;
         }
     }
 }
+
+@mixin swpPagination () {
+    top: auto;
+    bottom: 0;
+    background: #ECEFF6;
+    height: 6px;
+
+    span {
+        background: #F92F43;
+    }
+}
+
+@mixin secPadding () {
+    padding-top: 100px;
+
+    @include media(1100) {
+        padding-top: 96px;
+    }
+
+    @include media(700) {
+        padding-top: 60px;
+    }
+}
+
+@mixin imgFluid () {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

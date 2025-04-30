@@ -25,7 +25,236 @@ if (accordions.length) {
     
         accBtn.addEventListener('click', () => {
             item.classList.toggle('active');
+            accBtn.classList.toggle('active');
             accBody.style.maxHeight = accBody.style.maxHeight ? null : accBody.scrollHeight + 'px';
         });
     });
+}
+
+const leaderSwp = document.querySelectorAll('.leader-swp');
+if (leaderSwp.length) {
+    leaderSwp.forEach(el => {
+        const swp = new Swiper(el.querySelector('.swiper'), {
+            slidesPerView: 'auto',
+            spaceBetween: 12,
+            freeMode: true,
+            breakpoints: {
+                1100: {
+                    spaceBetween: 40,
+                    freeMode: false,
+                },
+                700: {
+                    spaceBetween: 20,
+                    freeMode: false,
+                }
+            },
+            pagination: {
+                el: el.querySelector('.swp-pagination'),
+                type: "progressbar",
+                clickable: true,
+            }
+        })
+    })
+}
+
+const leaderFootSwp = new Swiper('.leader-foot .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: true,
+    pagination: {
+        el: '.leader-foot .swp-pagination',
+        clickable: true,
+    }
+})
+
+const diplomaSwp = new Swiper('.diploma-swp .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 12,
+    freeMode: true,
+    breakpoints: {
+        1100: {
+            spaceBetween: 26,
+        },
+        700: {
+            spaceBetween: 20,
+        }
+    },
+    pagination: {
+        el: '.diploma-swp .swp-pagination',
+        type: "progressbar",
+        clickable: true,
+    }
+})
+
+const programTabBtn = document.querySelectorAll('.program-career__tab .tab-head li');
+const programTabBody = document.querySelectorAll('.program-career__tab .tab-body');
+
+if (programTabBtn.length) {
+    programTabBtn.forEach((btn, btnID) => {
+        btn.onclick = () => {
+            programTabBody.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+            programTabBtn.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const programAccordion = document.querySelectorAll('.program-career__accordion');
+
+if (programAccordion.length) {
+    programAccordion.forEach((item) => {
+        const accBtn = item.querySelector('.program-career__accordion-btn');
+        const accBody = item.querySelector('.program-career__accordion-body');
+    
+        accBtn.addEventListener('click', () => {
+            accBtn.classList.toggle('active');
+            accBody.style.maxHeight = accBody.style.maxHeight ? null : accBody.scrollHeight + 'px';
+        });
+    });
+}
+
+const educationSwp = document.querySelectorAll('.tab-body');
+
+if (educationSwp.length) {
+    educationSwp.forEach(el => {
+        const swp = new Swiper(el.querySelector('.swiper'), {
+            slidesPerView: 'auto',
+            spaceBetween: 12,
+            breakpoints: {
+                700: {
+                    spaceBetween: 0,
+                },
+            },
+            pagination: {
+                el: el.querySelector('.swp-pagination'),
+                type: "progressbar",
+                clickable: true,
+            }
+        })
+    })
+}
+
+const selects = document.querySelectorAll('.main-select');
+
+if (selects.length) {
+    selects.forEach((item) => {
+        const btn = item.querySelector('.main-select__btn');
+        const content = item.querySelector('.main-select__list');
+    
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('active');
+            content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+        });
+    });
+}
+
+const educationBtn = document.querySelectorAll('.education .tab-head li');
+const educationBody = document.querySelectorAll('.education .tab-body');
+const educationSelect = document.querySelector('.education .main-select');
+
+if (educationBtn.length) {
+    educationBtn.forEach((btn, btnID) => {
+        btn.onclick = () => {
+            educationBody.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+            educationBtn.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+    educationSelect.querySelectorAll('.main-select__list li').forEach((btn, btnID) => {
+        btn.onclick = () => {
+            educationSelect.querySelector('.main-select__btn span').textContent = btn.textContent;
+            educationSelect.querySelector('.main-select__btn').click();
+            educationBody.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const requirementTabBtn = document.querySelectorAll('.requirement-content__left .tab-head li');
+const requirementTabBody = document.querySelectorAll('.requirement-content__left .tab-body');
+
+if (requirementTabBtn.length) {
+    requirementTabBtn.forEach((btn, btnID) => {
+        btn.onclick = () => {
+            requirementTabBody.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+            requirementTabBtn.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const formTreaningTabBtn = document.querySelectorAll('.form-treaning__content-left .tab-head li');
+const formTreaningTabBody = document.querySelectorAll('.form-treaning__content-left .tab-body');
+const formTreaningSelect = document.querySelector('.form-treaning__content-left .main-select');
+
+if (formTreaningTabBtn.length) {
+    formTreaningTabBtn.forEach((btn, btnID) => {
+        btn.onclick = () => {
+            formTreaningTabBody.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active')
+                }
+            })
+            formTreaningTabBtn.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active')
+                }
+            })
+        }
+    })
+    formTreaningSelect.querySelectorAll('.main-select__list li').forEach((btn, btnID) => {
+        btn.onclick = () => {
+            formTreaningSelect.querySelector('.main-select__btn span').textContent = btn.textContent;
+            formTreaningSelect.querySelector('.main-select__btn').click();
+            formTreaningTabBody.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
 }
