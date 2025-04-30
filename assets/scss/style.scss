@@ -931,6 +931,24 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
                 height: 464px;
                 padding-right: 38px;
 
+                &::-webkit-scrollbar {
+                    display: block;
+                    width: 2px;
+                    background: #FFFFFFCC;
+                    border-radius: 0;
+                }
+        
+                &::-webkit-scrollbar-track {
+                    display: block;
+                    width: 2px;
+                    border-radius: 0;
+                }
+        
+                &::-webkit-scrollbar-thumb {
+                    background: #F92F43;
+                    width: 100%;
+                }
+
                 @include media(1100) {
                     padding-right: 12px;
                 }
@@ -1385,15 +1403,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
 // program
 .program {
-    padding-top: 100px;
-
-    @include media(1100) {
-        padding-top: 96px;
-    }
-
-    @include media(700) {
-        padding-top: 60px;
-    }
+    @include secPadding();
 
     .section_title {
         margin-bottom: 80px;
@@ -1404,6 +1414,181 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
         @include media(700) {
             margin-bottom: 20px;
+        }
+    }
+
+    &-card {
+        width: calc((100% - 290px) / 2 - 15px);
+        background: #ECEFF6;
+        padding: 40px;
+        position: relative;
+        z-index: 1;
+
+        @include media(1100) {
+            width: calc(100% - 280px);
+            padding: 36px;
+        }
+
+        @include media(700) {
+            width: 100%;
+            padding: 20px;
+        }
+
+        &.bg-red {
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 16px;
+            flex-shrink: 0;
+
+            @include media(1100) {
+                padding: 36px;
+            }
+
+            @include media(700) {
+                width: calc(50% - 6px);
+                padding: 16px 20px 20px;
+            }
+
+            svg {
+                max-width: 100%;
+                height: auto;
+            }
+
+            h3 {
+                font-size: 48px;
+                line-height: 90%;
+                margin-bottom: 8px;
+                color: white;
+            }
+
+            p {
+                color: white;
+                font-size: 20px;
+                line-height: 110%;
+                font-weight: bold;
+            }
+        }
+
+        &:nth-child(1) {
+            @include media(1100) {
+                order: 1
+            }
+        }
+
+        &:nth-child(2) {
+            @include media(1100) {
+                order: 2
+            }
+        }
+
+        &:nth-child(3) {
+            @include media(1100) {
+                order: 3
+            }
+        }
+
+        &:nth-child(4) {
+            @include media(1100) {
+                order: 5
+            }
+        }
+        
+        &:nth-child(5) {
+            justify-content: flex-start;
+            align-items: center;
+            padding: 21px;
+
+            @include media(1100) {
+                order: 4
+            }
+
+            @include media(700) {
+                padding: 20px;
+            }
+        }
+
+        &:nth-child(6) {
+            @include media(1100) {
+                order: 6;
+                width: 100%;
+
+                p {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        &.bg-dark {
+            background: #465068;
+
+            @include media(1100) {
+                width: 100%;
+            }
+
+            .bg-img {
+                right: 0;
+                left: auto;
+                width: auto;
+                height: auto;
+
+                @include media(700) {
+                    display: none;
+                }
+            }
+
+            h3, p {
+                color: white;
+            }
+        }
+
+        .bg-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include imgFluid();
+            z-index: -1;
+        }
+
+        h3 {
+            font-size: 28px;
+            line-height: 100%;
+            margin-bottom: 20px;
+
+            @include media(700) {
+                font-size: 20px;
+                margin-bottom: 12px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 120%;
+
+            @include media(1100) {
+                max-width: 521px;
+            }
+
+            @include media(700) {
+                font-size: 16px;
+            }
+        }
+
+        &__wrap {
+            display: flex;
+            align-items: stretch;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            @include media(1100) {
+                gap: 20px;
+            }
+
+            @include media(700) {
+                gap: 12px;
+            }
         }
     }
 }
@@ -3561,6 +3746,6 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 // Form treaning end
 
-// section:not(.form-treaning) {
+// section:not(.program) {
 //     display: none !important;
 // }
