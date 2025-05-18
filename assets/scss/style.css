@@ -1367,11 +1367,14 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   background: linear-gradient(180deg, rgba(236, 239, 246, 0) 0%, #ECEFF6 90%);
 }
+.about_main_text.scrollbar-hidden::before {
+  display: none;
+}
 .about_content {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 470px;
 }
 @media screen and (max-width: 1100px) {
@@ -3080,6 +3083,12 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 .figures-form select {
   margin-bottom: 54px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../images/select-icon.svg");
+  background-position: calc(100% - 30px) center;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 1350px) {
   .figures-form select {
@@ -3088,6 +3097,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 700px) {
   .figures-form select {
+    background-position: calc(100% - 20px) center;
     margin-bottom: 22px;
   }
 }

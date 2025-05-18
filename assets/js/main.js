@@ -258,3 +258,13 @@ if (formTreaningTabBtn.length) {
         }
     })
 }
+
+const aboutText = document.querySelector('.about .about_main_text');
+if (aboutText) {
+    let text = aboutText.textContent;
+    if (text.length < 1400) {
+        aboutText.classList.add('scrollbar-hidden');
+    } else {
+        aboutText.classList.remove('scrollbar-hidden');
+    }
+}

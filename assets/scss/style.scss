@@ -1306,13 +1306,19 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
             z-index: 2;
             background: linear-gradient(180deg, rgba(236, 239, 246, 0) 0%, #ECEFF6 90%);
         }
+
+        &.scrollbar-hidden {
+            &::before {
+                display: none;
+            }
+        }
     }
 
     &_content {
         display: flex;
         flex-direction: column;
         gap: 30px;
-        overflow-y: scroll;
+        overflow-y: auto;
         max-height: 470px;
 
         @include media(1100) {
@@ -3039,12 +3045,19 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
         select {
             margin-bottom: 54px;
-
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url('../images/select-icon.svg');
+            background-position: calc(100% - 30px) center;
+            background-repeat: no-repeat;
+            
             @include media(1350) {
                 margin-bottom: 24px;
             }
-
+            
             @include media(700) {
+                background-position: calc(100% - 20px) center;
                 margin-bottom: 22px;
             }
         }
@@ -3745,7 +3758,3 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     }
 }
 // Form treaning end
-
-// section:not(.program) {
-//     display: none !important;
-// }
