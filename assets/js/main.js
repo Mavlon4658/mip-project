@@ -311,7 +311,18 @@ const insideSwp = new Swiper('.inside .swiper', {
         el: '.inside .swp-pagination',
         clickable: true,
     },
-})
+});
+
+const directionCard = document.querySelectorAll('.direction-card');
+if (directionCard.length) {
+    directionCard.forEach(el => {
+        let btn = el.querySelector('.direction-card__btn a.icon');
+        btn.onclick = e => {
+            e.preventDefault();
+            el.classList.toggle('active');
+        }
+    })
+}
 
 window.addEventListener('click', event => {
     if (directionAccordion && !directionAccordion.contains(event.target)) {
