@@ -48,10 +48,10 @@ if (leaderSwp.length) {
                     freeMode: false,
                 }
             },
-            pagination: {
+            scrollbar: {
                 el: el.querySelector('.swp-pagination'),
-                type: "progressbar",
-                clickable: true,
+                // type: "progressbar",
+                // clickable: true,
             }
         })
     })
@@ -268,3 +268,53 @@ if (aboutText) {
         aboutText.classList.remove('scrollbar-hidden');
     }
 }
+
+
+
+
+
+
+// ---------- New Script  ----------
+const directionAccordion = document.querySelector('.direction-accordion');
+const directionAccordionBtn = document.querySelector('.direction-accordion__btn');
+const directionAccordionList = document.querySelectorAll('.direction-accordion__list li');
+
+if (directionAccordion) {
+    directionAccordionBtn.onclick = () => {
+        directionAccordion.classList.toggle('active');
+    }
+
+    directionAccordionList.forEach(item => {
+        item.onclick = () => {
+            directionAccordion.classList.remove('active');
+            directionAccordionBtn.querySelector('input').value = item.textContent;
+            directionAccordionBtn.querySelector('span').textContent = item.textContent;
+            directionAccordionList.forEach(el => {
+                if (item == el) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const insideSwp = new Swiper('.inside .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    navigation: {
+        nextEl: '.inside .swp-btn__next',
+        prevEl: '.inside .swp-btn__prev',
+    },
+    pagination: {
+        el: '.inside .swp-pagination',
+        clickable: true,
+    },
+})
+
+window.addEventListener('click', event => {
+    if (directionAccordion && !directionAccordion.contains(event.target)) {
+        directionAccordion.classList.remove('active');
+    }
+})

@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <a href="/" class="header-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <div class="header-content">
+                    <div class="header-center">
+                        <ul class="lang-list">
+                            <li>
+                                <a href="#" class="active">Рус</a>
+                            </li>
+                            <li>
+                                <span>•</span>
+                            </li>
+                            <li>
+                                <a href="#">Eng</a>
+                            </li>
+                        </ul>
+                        <a href="tel:+8 (800) 555 80 04" class="phone-link">8 (800) 555 80 04</a>
+                        <ul class="header-network">
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-3.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-4.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-5.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-right">
+                        <a href="#" class="btn-red">Хочу здесь учиться</a>
+                        <ul class="header-right__btn">
+                            <li>
+                                <button>
+                                    <img src="./assets/images/header-right-icon-1.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./assets/images/header-right-icon-2.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./assets/images/header-right-icon-3.svg" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <main>
+
+            <!-- Education home -->
+            <section class="education-home">
+                <div class="container education-home__container">
+                    <div class="education-home__left">
+                        <ul class="breadcrumb">
+                            <li>
+                                <a href="/">Главная</a>
+                            </li>
+                            <li>
+                                <img src="./assets/images/arrow-right.svg" alt="">
+                            </li>
+                            <li>
+                                <a href="#">Высшее образование</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <h2 class="title">Высшее образование</h2>
+                            <div class="subtitle">Подберите программу обучения, узнайте проходной балл, начните учиться, подберите программу обучения, узнайте проходной балл, начните учиться</div>
+                            <a href="#" class="btn-red">Подобрать программу</a>
+                        </div>
+                    </div>
+                    <div class="education-home__right">
+                        <img src="./assets/images/education-home-card.png" alt="" class="main-img">
+                    </div>
+                </div>
+            </section>
+            <!-- Education home end -->
+
+            <!-- Direction -->
+            <section class="direction">
+                <div class="container direction-container">
+                    <div class="direction-accordion active">
+                        <div class="direction-accordion__btn">
+                            <span>Бакалавриат</span>
+                            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.1038 8.68399L10.5 11.9835L13.8962 8.68399C14.1487 8.43867 14.5582 8.43867 14.8107 8.68399C15.0631 8.92931 15.0631 9.32707 14.8107 9.5724L10.9572 13.316C10.8359 13.4338 10.6715 13.5 10.5 13.5C10.3285 13.5 10.1641 13.4338 10.0428 13.316L6.18939 9.5724C5.93687 9.32707 5.93687 8.92931 6.18939 8.68399C6.4419 8.43867 6.85129 8.43867 7.1038 8.68399Z" fill="#465068" />
+                            </svg>
+                            <input type="text" value="Бакалавриат" hidden readonly>
+                        </div>
+                        <ul class="direction-accordion__list">
+                            <li class="active">Бакалавриат</li>
+                            <li>Специалитет</li>
+                            <li>Магистратура</li>
+                            <li>Интегрированный трек</li>
+                            <li>Аспирантура</li>
+                            <li>Партнерские программы</li>
+                        </ul>
+                    </div>
+                    <div class="direction-card__wrap">
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-1.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>37.03.01 Психологические науки</p>
+                                <h3>Психология</h3>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    <b>4</b> образовательных программы в&nbsp;направлении
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red icon">( i )</a>
+                                    <a href="#" class="btn-white">Отправить заявку</a>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-2.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>37.03.01 Психологические науки</p>
+                                <h3>Управление персоналом</h3>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    <b>4</b> образовательных программы в&nbsp;направлении
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red icon">( i )</a>
+                                    <a href="#" class="btn-white">Отправить заявку</a>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-3.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>37.03.01 Психологические науки</p>
+                                <h3>Психолого-педагогическое образование</h3>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    <b>4</b> образовательных программы в&nbsp;направлении
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red icon">( i )</a>
+                                    <a href="#" class="btn-white">Отправить заявку</a>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-4.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>37.03.01 Психологические науки</p>
+                                <h3>Специальное дефектологическое образование</h3>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    <b>4</b> образовательных программы в&nbsp;направлении
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red icon">( i )</a>
+                                    <a href="#" class="btn-white">Отправить заявку</a>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-5.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>37.03.01 Психологические науки</p>
+                                <h3>Науки о жизни</h3>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    <b>4</b> образовательных программы в&nbsp;направлении
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red icon">( i )</a>
+                                    <a href="#" class="btn-white">Отправить заявку</a>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-6.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>37.03.01 Психологические науки</p>
+                                <h3>Департамент культурных исследований</h3>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    <b>4</b> образовательных программы в&nbsp;направлении
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red icon">( i )</a>
+                                    <a href="#" class="btn-white">Отправить заявку</a>
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Direction end -->
+
+            <!-- Leader -->
+            <section class="leader">
+                <div class="container">
+                    <h2 class="section_title">
+                        <span></span>
+                        Академические и научные руководители
+                    </h2>
+                    <div class="leader-swp">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/leader-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Штукарева Светлана Владимировна</h3>
+                                                <p>Академический руководитель программы</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/leader-card-2.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Штукарева Светлана Владимировна</h3>
+                                                <p>Академический руководитель программы</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/leader-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Штукарева Светлана Владимировна</h3>
+                                                <p>Академический руководитель программы</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/leader-card-2.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Штукарева Светлана Владимировна</h3>
+                                                <p>Академический руководитель программы</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swp-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Leader end -->
+
+            <!-- Institute -->
+            <section class="institute">
+                <div class="container institute-container">
+                    <h3 class="section_title">
+                        <span></span>
+                        Об институте
+                    </h3>
+                    <img src="./assets/images/institute-bg.png" alt="" class="bg-img">
+                    <div class="list-wrap">
+                        <ul class="list-item">
+                            <li class="list-card empty"></li>
+                            <li class="list-card empty"></li>
+                            <li class="list-card">
+                                <img src="./assets/images/list-card-bg-1-1.png" alt="" class="list-card__bg">
+                                <h3>42 000+</h3>
+                                <p>выпускников</p>
+                            </li>
+                            <li class="list-card bg-grey">
+                                <h3>250+</h3>
+                                <p>партнеров для прохождения практик и стажировок</p>
+                            </li>
+                            <div class="list-card empty"></div>
+                            <li class="list-card bg-red">
+                                <h3>17 345</h3>
+                                <p>студентов и слушателей из 39 стран и 766 городов</p>
+                            </li>
+                            <li class="list-card bg-grey">
+                                <h3>23</h3>
+                                <p>факультета и кафедры</p>
+                            </li>
+                            <li class="list-card empty"></li>
+                            <li class="list-card bg-red text-bottom">
+                                <img src="./assets/images/list-card-bg-2-3.png" alt="" class="list-card__bg">
+                                <h3>650+</h3>
+                                <p>профессоров, доцентов и преподавателей</p>
+                            </li>
+                            <div class="list-card empty"></div>
+                            <li class="list-card empty"></li>
+                            <li class="list-card">
+                                <img src="./assets/images/list-card-bg-3-1.png" alt="" class="list-card__bg">
+                                <h3>3</h3>
+                                <p>учебных корпуса</p>
+                            </li>
+                            <li class="list-card bg-grey">
+                                <h3>5 500+</h3>
+                                <p>видеолекций</p>
+                            </li>
+                            <li class="list-card empty"></li>
+                            <li class="list-card bg-red">
+                                <img src="./assets/images/list-card-bg-3-3.png" alt="" class="list-card__bg">
+                                <h3>250+</h3>
+                                <p>открытых мероприятий в год</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- Institute end -->
+
+            <!-- diploma -->
+            <section class="diploma new-diploma">
+                <div class="container">
+                    <div class="diploma_in">
+                        <div class="diploma_left">
+                            <h6>
+                                Диплом государственного образца
+                            </h6>
+                            <p>
+                                Программа прошла государственную аккредитацию, выпускники получают диплом магистра психологии государственного образца
+                            </p>
+                            <a href="#" class="btn-red">
+                                Подать документы online
+                            </a>
+                        </div>
+                        <div class="diploma_right">
+                            <img class="img_diploma_in" src="./assets/images/diploma_in.png" alt="">
+                            <img class="diploma_img" src="./assets/images/diploma_img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="treaning-body">
+                        <p>
+                            <img src="./assets/images/question-icon-2.svg" alt="">
+                            <span>Необходима помощь в трудоустройстве или прохождении стажировки?</span>
+                        </p>
+                        <a href="#" class="btn-red">Получить консультацию</a>
+                    </div>
+                </div>
+            </section>
+            <!-- diploma -->
+
+            <!-- Inside -->
+            <section class="inside">
+                <div class="container">
+                    <h2 class="section_title">
+                        <span></span>
+                        МИП внутри
+                    </h2>
+                    <div class="description">Проводимые сотрудниками кафедры исследования направлены на изучение человека как уникальной индивидуальности. Кафедра также занимается вопросами развития и саморазвития личности, диагностики индивидуальных особенностей человека.</div>
+                    <div class="inside-swp">
+                        <button class="swp-btn swp-btn__prev">
+                            <svg width="28" height="50" viewBox="0 0 28 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 4.08635L23.8357 0L1.15372 22.2706C0.788102 22.6275 0.49794 23.0518 0.299938 23.5193C0.101935 23.9867 0 24.4879 0 24.9942C0 25.5005 0.101935 26.0018 0.299938 26.4692C0.49794 26.9366 0.788102 27.361 1.15372 27.7178L23.8357 50L27.9961 45.9136L6.70745 25L28 4.08635Z" fill="#465068" />
+                            </svg>
+                        </button>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/inside-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/inside-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/inside-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/inside-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/inside-slide-1.png" alt="">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/images/inside-slide-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="swp-btn swp-btn__next">
+                            <svg width="28" height="50" viewBox="0 0 28 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 4.08635L4.16431 0L26.8463 22.2706C27.2119 22.6275 27.5021 23.0518 27.7001 23.5193C27.8981 23.9867 28 24.4879 28 24.9942C28 25.5005 27.8981 26.0018 27.7001 26.4692C27.5021 26.9366 27.2119 27.361 26.8463 27.7178L4.16431 50L0.00392342 45.9136L21.2926 25L0 4.08635Z" fill="#465068" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="swp-pagination"></div>
+                    <p>Здесь должна быть подпись к фото</p>
+                </div>
+            </section>
+            <!-- Inside end -->
+
+            <!-- Map -->
+            <section class="map">
+                <div class="container map-container">
+                    <h2 class="section_title">
+                        <span></span>
+                        МИП в центре Москвы
+                    </h2>
+                    <ul class="map-head">
+                        <li>
+                            <img src="./assets/images/map-icon-1.svg" alt="" class="icon">
+                            <h3>МЦК <br> Кутузовская</h3>
+                            <div class="text">
+                                <span>
+                                    <img src="./assets/images/map-icon-2.svg" alt="">
+                                    200 м
+                                </span>
+                                <div class="line"></div>
+                                <span>
+                                    <img src="./assets/images/map-icon-3.svg" alt="">
+                                    2 мин 
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/images/map-icon-1.svg" alt="" class="icon">
+                            <h3>МЦД-4 <br> Кутузовская</h3>
+                            <div class="text">
+                                <span>
+                                    <img src="./assets/images/map-icon-2.svg" alt="">
+                                    200 м
+                                </span>
+                                <div class="line"></div>
+                                <span>
+                                    <img src="./assets/images/map-icon-3.svg" alt="">
+                                    2 мин 
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/images/map-icon-1.svg" alt="" class="icon">
+                            <h3>Автобусы <br> Поклонная ул.</h3>
+                            <div class="text">
+                                <span>
+                                    <img src="./assets/images/map-icon-2.svg" alt="">
+                                    100 м
+                                </span>
+                                <div class="line"></div>
+                                <span>
+                                    <img src="./assets/images/map-icon-3.svg" alt="">
+                                    1 мин 
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./assets/images/map-icon-1.svg" alt="" class="icon">
+                            <h3>Метро <br> Кутузовская</h3>
+                            <div class="text">
+                                <span>
+                                    <img src="./assets/images/map-icon-2.svg" alt="">
+                                    200 м
+                                </span>
+                                <div class="line"></div>
+                                <span>
+                                    <img src="./assets/images/map-icon-3.svg" alt="">
+                                    2 мин 
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af2a4438344d151d30bfb2e71563bbbb21df6e92c58fe7ae9e811d112af09b5fb&amp;source=constructor" width="1280" height="720" frameborder="0"></iframe>
+                </div>
+            </section>
+            <!-- Map end -->
+
+            <!-- career -->
+            <section class="career">
+                <div class="container">
+                    <h3 class="section_title">
+                        <span></span>
+                        Карьерный центр МИП
+                    </h3>
+                    <div class="career_blocks">
+                        <div class="career_left">
+                            <h6>
+                                О карьерном центре
+                            </h6>
+                            <p class="career_text">
+                                В КЦ МИП проводятся мероприятия, помогающие нарастить психологам свои профессиональные навыки и попрактиковаться в методах, используемых в психологии. Также приглашаются спикеры, опытные специалисты, которые ведут лекции и практические семинары для студентов и делятся своим опытом.
+                            </p>
+                            <p>
+                                В КЦ МИП есть стажировки, вакансии, откликаясь на которые, hr-специалист дает свои рекомендации по составлению резюме для определенной вакансии и сопроводительного письма для нее.
+                            </p>
+                            <div class="career_img">
+                                <img class="career_bg" src="./assets/images/career_img.png" alt="">
+                                <img class="career_bg_media" src="./assets/images/career_img_media.png" alt="">
+                                <img class="career_woman" src="./assets/images/career_woman.png" alt="">
+                            </div>
+                            <a href="#" class="btn-red">
+                                Обратиться в Карьерный центр
+                            </a>
+                        </div>
+                        <div class="career_right">
+                            <h6>
+                                Где работают выпускники?
+                            </h6>
+                            <div class="career_logos">
+                                <div class="career_logo">
+                                    <img src="./assets/images/career1.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career2.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career3.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career4.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career5.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career6.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career7.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career8.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career9.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career10.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career11.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career12.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career13.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career14.svg" alt="">
+                                </div>
+                                <div class="career_logo">
+                                    <img src="./assets/images/career15.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- career -->
+
+            <!-- Leader -->
+            <section class="leader review">
+                <div class="container">
+                    <h2 class="section_title">
+                        <span></span>
+                        Истории успеха и отзывы выпускников
+                    </h2>
+                    <div class="leader-swp">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/review-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Николай Емельянчук</h3>
+                                                <p>Выпускник магистратуры «Экзистенциальная психология личности и логотерапия», 2025</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Отзыв</h3>
+                                                    <ul>
+                                                        <li>Поток магистратуры, на который я поступил, был первым. Учёба была довольно интенсивной - многие вечера были проведены за просмотром лекций. Первый семестр идут общеобразовательные предметы. Со второго семестра начинают добавляться профильные предметы. Третий и последующий семестры уже полностью состоят из профильных предметов. С какого-то момента вы будете включены в рассылку логотерапевтического сообщества. Обязательно следите за ней и посещайте интервизии и супервизии.</li>
+                                                        <li>Данная программа создана людьми, которые любят своё дело и горят им. Светлана Владимировна Штукарева - руководитель направления, Алексей Иванович Аверьянов - научный руководитель направления, весь педагогический коллектив, все будет стараться погрузить вас в тему, раскрыть интересные грани логотерапии и экзистенциализма. Например, моим любимым был предмет "Философские основания экзистенциализма", а также понравилась производственная практика. Вам же, наверняка, в душу западёт что-то своё.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/review-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Николай Емельянчук</h3>
+                                                <p>Выпускник магистратуры «Экзистенциальная психология личности и логотерапия», 2025</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Отзыв</h3>
+                                                    <ul>
+                                                        <li>Поток магистратуры, на который я поступил, был первым. Учёба была довольно интенсивной - многие вечера были проведены за просмотром лекций. Первый семестр идут общеобразовательные предметы. Со второго семестра начинают добавляться профильные предметы. Третий и последующий семестры уже полностью состоят из профильных предметов. С какого-то момента вы будете включены в рассылку логотерапевтического сообщества. Обязательно следите за ней и посещайте интервизии и супервизии.</li>
+                                                        <li>Данная программа создана людьми, которые любят своё дело и горят им. Светлана Владимировна Штукарева - руководитель направления, Алексей Иванович Аверьянов - научный руководитель направления, весь педагогический коллектив, все будет стараться погрузить вас в тему, раскрыть интересные грани логотерапии и экзистенциализма. Например, моим любимым был предмет "Философские основания экзистенциализма", а также понравилась производственная практика. Вам же, наверняка, в душу западёт что-то своё.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/review-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Николай Емельянчук</h3>
+                                                <p>Выпускник магистратуры «Экзистенциальная психология личности и логотерапия», 2025</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Отзыв</h3>
+                                                    <ul>
+                                                        <li>Поток магистратуры, на который я поступил, был первым. Учёба была довольно интенсивной - многие вечера были проведены за просмотром лекций. Первый семестр идут общеобразовательные предметы. Со второго семестра начинают добавляться профильные предметы. Третий и последующий семестры уже полностью состоят из профильных предметов. С какого-то момента вы будете включены в рассылку логотерапевтического сообщества. Обязательно следите за ней и посещайте интервизии и супервизии.</li>
+                                                        <li>Данная программа создана людьми, которые любят своё дело и горят им. Светлана Владимировна Штукарева - руководитель направления, Алексей Иванович Аверьянов - научный руководитель направления, весь педагогический коллектив, все будет стараться погрузить вас в тему, раскрыть интересные грани логотерапии и экзистенциализма. Например, моим любимым был предмет "Философские основания экзистенциализма", а также понравилась производственная практика. Вам же, наверняка, в душу западёт что-то своё.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/review-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Николай Емельянчук</h3>
+                                                <p>Выпускник магистратуры «Экзистенциальная психология личности и логотерапия», 2025</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Отзыв</h3>
+                                                    <ul>
+                                                        <li>Поток магистратуры, на который я поступил, был первым. Учёба была довольно интенсивной - многие вечера были проведены за просмотром лекций. Первый семестр идут общеобразовательные предметы. Со второго семестра начинают добавляться профильные предметы. Третий и последующий семестры уже полностью состоят из профильных предметов. С какого-то момента вы будете включены в рассылку логотерапевтического сообщества. Обязательно следите за ней и посещайте интервизии и супервизии.</li>
+                                                        <li>Данная программа создана людьми, которые любят своё дело и горят им. Светлана Владимировна Штукарева - руководитель направления, Алексей Иванович Аверьянов - научный руководитель направления, весь педагогический коллектив, все будет стараться погрузить вас в тему, раскрыть интересные грани логотерапии и экзистенциализма. Например, моим любимым был предмет "Философские основания экзистенциализма", а также понравилась производственная практика. Вам же, наверняка, в душу западёт что-то своё.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/review-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Николай Емельянчук</h3>
+                                                <p>Выпускник магистратуры «Экзистенциальная психология личности и логотерапия», 2025</p>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Отзыв</h3>
+                                                    <ul>
+                                                        <li>Поток магистратуры, на который я поступил, был первым. Учёба была довольно интенсивной - многие вечера были проведены за просмотром лекций. Первый семестр идут общеобразовательные предметы. Со второго семестра начинают добавляться профильные предметы. Третий и последующий семестры уже полностью состоят из профильных предметов. С какого-то момента вы будете включены в рассылку логотерапевтического сообщества. Обязательно следите за ней и посещайте интервизии и супервизии.</li>
+                                                        <li>Данная программа создана людьми, которые любят своё дело и горят им. Светлана Владимировна Штукарева - руководитель направления, Алексей Иванович Аверьянов - научный руководитель направления, весь педагогический коллектив, все будет стараться погрузить вас в тему, раскрыть интересные грани логотерапии и экзистенциализма. Например, моим любимым был предмет "Философские основания экзистенциализма", а также понравилась производственная практика. Вам же, наверняка, в душу западёт что-то своё.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swp-pagination"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Leader end -->
+
+            <!-- Figures -->
+            <section class="figures new-figures">
+                <div class="container">
+                    <div class="figures-foot">
+                        <div class="figures-text">
+                            <div></div>
+                            <div class="main-img">
+                                <img src="./assets/images/figures-foot-card-2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="figures-form">
+                            <h3>Поможем подобрать образовательную программу </h3>
+                            <p>Остались вопросы? <br>Позвоните нам: <b>+7 (495) 933-26-83 (высшее образование)</b></p>
+                            <div class="form-group">
+                                <input type="text" placeholder="Имя*" class="form-inp">
+                                <input type="tel" placeholder="+7 (999) 999-99-99*" class="form-inp">
+                                <input type="email" placeholder="E-mail*" class="form-inp">
+                            </div>
+                            <select name="" id="" class="form-inp">
+                                <option value="" hidden selected>Удобный способ связи</option>
+                                <option value="select 1" >select 1</option>
+                                <option value="select 2" >select 2</option>
+                                <option value="select 3" >select 3</option>
+                            </select>
+                            <div class="form-checkbox__wrap">
+                                <div class="form-checkbox">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <p>Я подтверждаю, что ознакомился с <a href="#">Политикой конфиденциальности</a> и <a href="#">Правилами обработки персональных данных</a></p>
+                            </div>
+                            <button class="btn-red">Отправить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Figures end -->
+
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container"></div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

@@ -129,8 +129,16 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 
 .container {
     max-width: 1520px;
-    width: calc(100% - 40px);
+    width: calc(100% - 280px);
     margin: 0 auto;
+
+    @include media(1400) {
+        width: calc(100% - 112px);
+    }
+
+    @include media(700) {
+        width: calc(100% - 40px);
+    }
 }
 
 // Breadcrumb
@@ -428,6 +436,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
         }
     }
 
+        
     h2 {
         max-width: 579px;
         width: 100%;
@@ -3758,3 +3767,5 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     }
 }
 // Form treaning end
+
+@import './new-style';
