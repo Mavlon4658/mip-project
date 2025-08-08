@@ -12,10 +12,14 @@
          url("../fonts/Noah-Bold.otf") format("opentype");
     font-weight: 700;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+$font-noah: "Noah", sans-serif;
+$font-golos: "Golos Text", sans-serif;
 // Fonts end
 
 // Colors
-$font-noah: "Noah", sans-serif;
 // Colors end
 
 @mixin media($value) {

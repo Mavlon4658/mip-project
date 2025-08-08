@@ -329,3 +329,129 @@ window.addEventListener('click', event => {
         directionAccordion.classList.remove('active');
     }
 })
+
+
+// -------------- Career js -------------- //
+
+const skillsSwp = new Swiper('.skills .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 30,
+    breakpoints: {
+        1500: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+        1100: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+        }
+    },
+    navigation: {
+        nextEl: '.skills .swp-btn__next',
+        prevEl: '.skills .swp-btn__prev',
+    },
+});
+
+const skillsFilterBtn = document.querySelector('.skills .filter-btn');
+const skillsNavs = document.querySelector('.skills-navs');
+
+if (skillsNavs) {
+    skillsFilterBtn.onclick = () => {
+        skillsNavs.classList.toggle('active');
+    }
+}
+
+const archiveSwp = new Swiper('.archive .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    breakpoints: {
+        1500: {
+            slidesPerView: 4,
+            spaceBetween: 20
+        },
+        1100: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+        },
+        700: {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+        }
+    },
+    navigation: {
+        nextEl: '.archive .swp-btn__next',
+        prevEl: '.archive .swp-btn__prev',
+    },
+    scrollbar: {
+        el: ".archive .swp-scrollbar",
+        draggable: true,
+    },
+})
+
+const jobTabBtn = document.querySelectorAll('.job .tab-head li');
+const jobTabItem = document.querySelectorAll('.job .tab-item');
+if (jobTabBtn.length) {
+    jobTabBtn.forEach((btn, btnIdx) => {
+        btn.onclick = () => {
+            jobTabItem.forEach((el, elIdx) => {
+                if (elIdx == btnIdx) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+            jobTabBtn.forEach((el, elIdx) => {
+                if (elIdx == btnIdx) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+var materialInit = false;
+var materialSwp;
+function materialSwpCard() {
+    if (window.innerWidth <= 700) {
+        if (!materialInit) {
+            materialInit = true;
+            materialSwp = new Swiper(".material .swiper", {
+                slidesPerView: "auto",
+                spaceBetween: 15,
+                navigation: {
+                    nextEl: '.material .swp-btn__next',
+                    prevEl: '.material .swp-btn__prev',
+                },
+                scrollbar: {
+                    el: ".material .swp-scrollbar",
+                    draggable: true,
+                },
+            });
+        }
+    } else if (materialInit) {
+        materialSwp.destroy();
+        materialInit = false;
+    }
+}
+materialSwpCard();
+window.addEventListener("resize", materialSwpCard);
+
+const commetsSwp = new Swiper('.comments .swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    freeMode: true,
+    breakpoints: {
+        1500: {
+            spaceBetween: 30,
+        },
+        1100: {
+            spaceBetween: 22,
+        }
+    },
+    scrollbar: {
+        el: ".comments .swp-scrollbar",
+        draggable: true,
+    },
+})
