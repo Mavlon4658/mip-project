@@ -455,3 +455,25 @@ const commetsSwp = new Swiper('.comments .swiper', {
         draggable: true,
     },
 })
+
+const modals = ['.competence-modal', '.association-modal'];
+if (modals.length) {
+    modals.forEach(modalCls => {
+        const modalEl = document.querySelector(modalCls);
+        const closeBtn = document.querySelector(`${modalCls} .modal-close`);
+        const modalBg = document.querySelector(`${modalCls} .modal-bg`);
+        const openBtn = document.querySelectorAll(`${modalCls}__open`);
+        openBtn.forEach(btn => {
+            btn.onclick = e => {
+                e.preventDefault();
+                modalEl.classList.add('active');
+            }
+        })
+        closeBtn.onclick = () => {
+            modalEl.classList.remove('active')
+        }
+        modalBg.onclick = () => {
+            modalEl.classList.remove('active')
+        }
+    })
+}
