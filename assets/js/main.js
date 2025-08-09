@@ -456,7 +456,7 @@ const commetsSwp = new Swiper('.comments .swiper', {
     },
 })
 
-const modals = ['.competence-modal', '.association-modal'];
+const modals = ['.competence-modal', '.association-modal', '.vacancy-modal', '.internship-modal'];
 if (modals.length) {
     modals.forEach(modalCls => {
         const modalEl = document.querySelector(modalCls);

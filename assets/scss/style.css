@@ -9364,4 +9364,283 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     gap: 12px;
   }
+}
+
+.vacancy-modal .modal-content__text {
+  max-height: 68vh;
+}
+.vacancy-modal .text {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px 10px;
+  margin: 0 0 60px;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 13px;
+    margin-bottom: 40px;
+  }
+}
+.vacancy-modal .text-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text-item {
+    gap: 12px;
+  }
+}
+.vacancy-modal .text-item img {
+  flex-shrink: 0;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text-item img {
+    width: 20px;
+  }
+}
+.vacancy-modal .text-item p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 90%;
+  letter-spacing: -0.01em;
+  color: #465068;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text-item p {
+    font-size: 16px;
+  }
+}
+.vacancy-modal .text-2 {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 535px;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text-2 {
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+}
+.vacancy-modal .text-2 h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #465068;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text-2 h4 {
+    font-size: 16px;
+  }
+}
+.vacancy-modal .text-2 ul {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text-2 ul {
+    padding-left: 20px;
+  }
+}
+.vacancy-modal .text-2 li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #465068;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text-2 li {
+    font-size: 16px;
+  }
+}
+.vacancy-modal .text-2 li::marker {
+  font-size: 16px;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .text-2 li::marker {
+    font-size: 12px;
+  }
+}
+.vacancy-modal h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #465068;
+  max-width: 506px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal h3 {
+    font-size: 16px;
+  }
+}
+.vacancy-modal .btn-red {
+  width: 317px;
+  font-size: 20px;
+  gap: 12px;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .btn-red {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    gap: 10px;
+  }
+}
+.vacancy-modal .btn-red img {
+  width: 29px;
+}
+@media screen and (max-width: 700px) {
+  .vacancy-modal .btn-red img {
+    width: 25px;
+  }
+}
+
+.internship-modal .modal-content__text {
+  max-height: 75vh;
+}
+.internship-modal h2 {
+  max-width: 627px;
+}
+.internship-modal .text {
+  max-width: 600px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: flex-start;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .text {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 36px;
+    padding-top: 14px;
+  }
+}
+.internship-modal .text-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.internship-modal .text-item img {
+  width: 24px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .text-item img {
+    width: 20px;
+  }
+}
+.internship-modal .text-item p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 90%;
+  letter-spacing: -0.01em;
+  color: #465068;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .text-item p {
+    font-size: 16px;
+  }
+}
+.internship-modal .text ul {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+.internship-modal .text li {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #465068;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .text li {
+    font-size: 16px;
+  }
+}
+.internship-modal .text li::marker {
+  font-size: 14px;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .text li::marker {
+    font-size: 12px;
+  }
+}
+.internship-modal .text-content {
+  margin-bottom: 40px;
+  max-width: 535px;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .text-content {
+    margin-bottom: 36px;
+  }
+}
+.internship-modal .text-content h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #465068;
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .text-content h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+.internship-modal .text-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.internship-modal .text-content li {
+  font-family: "Golos Text", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 142%;
+  color: #474a4d;
+}
+.internship-modal h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: #465068;
+  max-width: 506px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal h3 {
+    font-size: 16px;
+  }
+}
+.internship-modal .btn-red {
+  width: 317px;
+  font-size: 20px;
+  gap: 12px;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .btn-red {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    gap: 10px;
+  }
+}
+.internship-modal .btn-red img {
+  width: 29px;
+}
+@media screen and (max-width: 700px) {
+  .internship-modal .btn-red img {
+    width: 25px;
+  }
 }/*# sourceMappingURL=style.css.map */

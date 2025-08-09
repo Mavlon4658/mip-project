@@ -3069,3 +3069,297 @@
     }
 }
 // Association modal end
+
+// Vacancy modal
+.vacancy-modal {
+    .modal-content__text {
+        max-height: 68vh;
+    }
+
+
+    .text {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px 10px;
+        margin: 0 0 60px;
+
+        @include media(700) {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 13px;
+            margin-bottom: 40px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            @include media(700) {
+                gap: 12px;
+            }
+
+            img {
+                flex-shrink: 0;
+
+                @include media(700) {
+                    width: 20px;
+                }
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 90%;
+                letter-spacing: -0.01em;
+                color: #465068;
+
+                @include media(700) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .text-2 {
+        margin-bottom: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 535px;
+
+        @include media(700) {
+            gap: 10px;
+            margin-bottom: 28px;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 110%;
+            letter-spacing: -0.01em;
+            color: #465068;
+
+            @include media(700) {
+                font-size: 16px;
+            }
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 24px;
+
+            @include media(700) {
+                padding-left: 20px;
+            }
+        }
+        
+        li {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 110%;
+            letter-spacing: -0.01em;
+            color: #465068;
+
+            @include media(700) {
+                font-size: 16px;
+            }
+
+            &::marker {
+                font-size: 16px;
+
+                @include media(700) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 110%;
+        letter-spacing: -0.01em;
+        color: #465068;
+        max-width: 506px;
+        margin-bottom: 24px;
+
+        @include media(700) {
+            font-size: 16px;
+        }
+    }
+
+    .btn-red {
+        width: 317px;
+        font-size: 20px;
+        gap: 12px;
+
+        @include media(700) {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            gap: 10px;
+        }
+
+        img {
+            width: 29px;
+
+            @include media(700) {
+                width: 25px;
+            }
+        }
+    }
+}
+// Vacancy modal end
+
+// Internship modal
+.internship-modal {
+    .modal-content__text {
+        max-height: 75vh;
+    }
+
+    h2 {
+        max-width: 627px;
+    }
+
+    .text {
+        max-width: 600px;
+        margin-bottom: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: flex-start;
+
+        @include media(700) {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 12px;
+            margin-bottom: 36px;
+            padding-top: 14px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            img {
+                width: 24px;
+                flex-shrink: 0;
+
+                @include media(700) {
+                    width: 20px;
+                }
+            }
+
+            p {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 90%;
+                letter-spacing: -0.01em;
+                color: #465068;
+
+                @include media(700) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 24px;
+        }
+
+        li {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 110%;
+            letter-spacing: -0.01em;
+            color: #465068;
+
+            @include media(700) {
+                font-size: 16px;
+            }
+
+            &::marker {
+                font-size: 14px;
+
+                @include media(700) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .text-content {
+        margin-bottom: 40px;
+        max-width: 535px;
+
+        @include media(700) {
+            margin-bottom: 36px;
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 110%;
+            letter-spacing: -0.01em;
+            color: #465068;
+            margin-bottom: 16px;
+
+            @include media(700) {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        li {
+            font-family: $font-golos;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 142%;
+            color: #474a4d;
+            
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 110%;
+        letter-spacing: -0.01em;
+        color: #465068;
+        max-width: 506px;
+        margin-bottom: 24px;
+
+        @include media(700) {
+            font-size: 16px;
+        }
+    }
+
+    .btn-red {
+        width: 317px;
+        font-size: 20px;
+        gap: 12px;
+
+        @include media(700) {
+            width: 100%;
+            height: 50px;
+            font-size: 16px;
+            gap: 10px;
+        }
+
+        img {
+            width: 29px;
+
+            @include media(700) {
+                width: 25px;
+            }
+        }
+    }
+}
+// Internship modal end
