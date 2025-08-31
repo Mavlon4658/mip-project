@@ -10219,7 +10219,7 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
   }
 }
 .dialogue-figures .figures-text {
-  padding-left: 47px;
+  padding: 47px 0 0;
 }
 @media screen and (max-width: 1500px) {
   .dialogue-figures .figures-text {
