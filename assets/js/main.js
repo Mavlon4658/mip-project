@@ -50,9 +50,8 @@ if (leaderSwp.length) {
             },
             scrollbar: {
                 el: el.querySelector('.swp-pagination'),
-                // type: "progressbar",
-                // clickable: true,
-            }
+                draggable: true,
+            },
         })
     })
 }
@@ -79,11 +78,10 @@ const diplomaSwp = new Swiper('.diploma-swp .swiper', {
             spaceBetween: 20,
         }
     },
-    pagination: {
-        el: '.diploma-swp .swp-pagination',
-        type: "progressbar",
-        clickable: true,
-    }
+    scrollbar: {
+        el: ".diploma-swp .swp-pagination",
+        draggable: true,
+    },
 })
 
 const programTabBtn = document.querySelectorAll('.program-career__tab .tab-head li');
@@ -136,11 +134,10 @@ if (educationSwp.length) {
                     spaceBetween: 0,
                 },
             },
-            pagination: {
+            scrollbar: {
                 el: el.querySelector('.swp-pagination'),
-                type: "progressbar",
-                clickable: true,
-            }
+                draggable: true,
+            },
         })
     })
 }
@@ -159,38 +156,43 @@ if (selects.length) {
     });
 }
 
-const educationBtn = document.querySelectorAll('.education .tab-head li');
-const educationBody = document.querySelectorAll('.education .tab-body');
-const educationSelect = document.querySelector('.education .main-select');
-
-if (educationBtn.length) {
-    educationBtn.forEach((btn, btnID) => {
-        btn.onclick = () => {
-            educationBody.forEach((el, elID) => {
-                if (elID == btnID) {
-                    el.classList.add('active');
-                } else {
-                    el.classList.remove('active');
+const educationEL = document.querySelectorAll('.education')
+if (educationEL.length) {
+    educationEL.forEach(item => {
+        const educationBtn = item.querySelectorAll('.tab-head li');
+        const educationBody = item.querySelectorAll('.tab-body');
+        const educationSelect = item.querySelector('.main-select');
+        
+        if (educationBtn.length) {
+            educationBtn.forEach((btn, btnID) => {
+                btn.onclick = () => {
+                    educationBody.forEach((el, elID) => {
+                        if (elID == btnID) {
+                            el.classList.add('active');
+                        } else {
+                            el.classList.remove('active');
+                        }
+                    })
+                    educationBtn.forEach((el, elID) => {
+                        if (elID == btnID) {
+                            el.classList.add('active');
+                        } else {
+                            el.classList.remove('active');
+                        }
+                    })
                 }
             })
-            educationBtn.forEach((el, elID) => {
-                if (elID == btnID) {
-                    el.classList.add('active');
-                } else {
-                    el.classList.remove('active');
-                }
-            })
-        }
-    })
-    educationSelect.querySelectorAll('.main-select__list li').forEach((btn, btnID) => {
-        btn.onclick = () => {
-            educationSelect.querySelector('.main-select__btn span').textContent = btn.textContent;
-            educationSelect.querySelector('.main-select__btn').click();
-            educationBody.forEach((el, elID) => {
-                if (elID == btnID) {
-                    el.classList.add('active');
-                } else {
-                    el.classList.remove('active');
+            educationSelect.querySelectorAll('.main-select__list li').forEach((btn, btnID) => {
+                btn.onclick = () => {
+                    educationSelect.querySelector('.main-select__btn span').textContent = btn.textContent;
+                    educationSelect.querySelector('.main-select__btn').click();
+                    educationBody.forEach((el, elID) => {
+                        if (elID == btnID) {
+                            el.classList.add('active');
+                        } else {
+                            el.classList.remove('active');
+                        }
+                    })
                 }
             })
         }
@@ -477,3 +479,16 @@ if (modals.length) {
         }
     })
 }
+
+
+
+// -------------- Dialogue js -------------- //
+
+const dialogueHomeSwp = new Swiper('.dialogue-home .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    scrollbar: {
+        el: ".dialogue-home .swp-scrollbar",
+        draggable: true,
+    },
+})

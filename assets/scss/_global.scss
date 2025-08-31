@@ -36,13 +36,32 @@ $font-golos: "Golos Text", sans-serif;
 }
 
 @mixin swpPagination () {
-    top: auto;
-    bottom: 0;
-    background: #ECEFF6;
+    position: relative;
+    top: auto !important;
+    bottom: auto;
     height: 6px;
+    width: 100%;
+    background: #ECEFF6;
+    border-radius: 0 !important;
+    margin-top: 40px;
 
-    span {
+    @include media(1500) {
+        margin-top: 30px;
+    }
+
+    @include media(1100) {
+        margin-top: 40px;
+    }
+
+    @include media(700) {
+        margin-top: 20px;
+    }
+
+    div {
+        height: 100%;
         background: #F92F43;
+        border-radius: 0 !important;
+        cursor: pointer;
     }
 }
 
@@ -62,4 +81,20 @@ $font-golos: "Golos Text", sans-serif;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@mixin sectionPadding () {
+    padding-top: 100px;
+
+    @include media(1500) {
+        padding-top: 90px;
+    }
+
+    @include media(1100) {
+        padding-top: 96px;
+    }
+
+    @include media(700) {
+        padding-top: 60px;
+    }
 }

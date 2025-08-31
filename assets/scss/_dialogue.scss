@@ -1,0 +1,649 @@
+// Dialogue home
+.dialogue-home {
+    
+    .swiper {
+        margin-bottom: 40px;
+
+        @include media(1100) {
+            margin-bottom: 20px;
+        }
+
+        @include media(700) {
+            width: calc(100% + 40px);
+            margin-left: -20px;
+        }
+
+        &-slide {
+            height: 580px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px;
+
+            @include media(1500) {
+                height: 442px;
+                padding: 30px;
+            }
+
+            @include media(1100) {
+                padding: 36px;
+                height: 800px;
+            }
+
+            @include media(700) {
+                padding: 40px 20px 20px;
+            }
+        }
+    }
+
+    .bg-img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .breadcrumb {
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        a {
+            color: #ECEFF6;
+            line-height: 110%;
+        }
+    }
+
+    &__alert {
+        backdrop-filter: blur(2px);
+        background: #eceff6;
+        padding: 12px 20px 14px;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        color: #465068;
+        margin: 20px 0 60px;
+        
+        @include media(1500) {
+            font-size: 16px;
+            margin: 20px 0 56px;
+        }
+
+        @include media(1100) {
+            font-size: 18px;
+            margin: 24px 0;
+        }
+
+        @include media(700) {
+            font-size: 14px;
+            padding: 10px 12px 12px;
+            margin: 16px 0 40px;
+        }
+
+        span {
+            width: 12px;
+            height: 12px;
+            background: #f92f43;
+
+            @include media(700) {
+                width: 8px;
+                height: 8px;
+            }
+        }
+    }
+
+    h2 {
+        font-weight: 700;
+        font-size: 80px;
+        line-height: 80%;
+        letter-spacing: -0.01em;
+        color: #eceff6;
+        margin-bottom: 30px;
+
+        @include media(1500) {
+            max-width: 318px;
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        @include media(1100) {
+            font-size: 66px;
+        }
+
+        @include media(700) {
+            font-size: 32px;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 80%;
+        letter-spacing: -0.01em;
+        color: #eceff6;
+
+        @include media(1500) {
+            font-size: 15px;
+            line-height: 120%;
+        }
+
+        @include media(1100) {
+            font-size: 20px;
+        }
+
+        @include media(700) {
+            font-size: 18px;
+            line-height: 110%;
+            max-width: 222px;
+        }
+    }
+
+    .btn-red {
+        padding: 0;
+        width: 394px;
+        height: 60px;
+
+        @include media(1500) {
+            width: 300px;
+            height: 46px;
+            font-size: 18px;
+        }
+
+        @include media(1100) {
+            width: 100%;
+            height: 60px;
+            font-size: 24px;
+        }
+
+        @include media(700) {
+            height: 50px;
+            font-size: 16px;
+        }
+    }
+}
+// Dialogue home end
+
+// About project
+.about-project {
+    .container {
+        align-items: stretch;
+    }
+
+    .about {
+        &_text {
+            height: auto;
+        }
+
+        &_content {
+            overflow-y: auto;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &_img {
+            // height: 100%;
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                z-index: -1;
+            }
+        }
+    }
+}
+// About project end
+
+// New education
+.new-education {
+    padding: 0 !important;
+
+    .tab-body {
+        &__swp {
+            padding: 0 !important;
+        }
+
+        .swiper {
+            &-slide {
+                width: 548px;
+
+                @include media(700) {
+                    width: 320px;
+                }
+
+                .education-card {
+                    width: 100%;
+                    border-width: 24px;
+                    
+                    &:first-child {
+                        border-bottom: 0;
+    
+                        @include media(700) {
+                            border-bottom: 12px solid #ECEFF6;
+                        }
+                    }
+
+                    &:not(:first-child) {
+                        border-left-width: 24px;
+                        
+                        @include media(700) {
+                            border-left-width: 12px;
+                        }
+                    }
+                    
+                    &:last-child {
+                        border-right: 0;
+
+                        @include media(1100) {
+                            border-right-width: 24px;
+                        }
+
+                        @include media(700) {
+                            border-right-width: 12px;
+                        }
+                    }
+                    
+                    &:not(:last-child) {
+                        border-right: 0 !important;
+                        width: 100%;
+                        
+                        @include media(1100) {
+                            width: 100%;
+                        }
+            
+                        @include media(700) {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                &:last-child {
+                    .education-card {
+                        border-right: 24px solid #ECEFF6 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+// New education end
+
+// Dialogue diploma
+.dialogue-diploma {
+    padding: 0;
+
+    .treaning-body {
+        margin: 0;
+    }
+}
+// Dialogue diploma end
+
+.education {
+    .tab-body__swp {
+        padding-bottom: 0;
+    }
+}
+
+// Education programs
+.educational-programs {
+    padding-bottom: 0;
+
+    .section_title {
+        margin-bottom: 80px;
+
+        @include media(1500) {
+            margin-bottom: 45px;
+        }
+
+        @include media(1100) {
+            margin-bottom: 40px;
+        }
+
+        @include media(700) {
+            margin-bottom: 20px;
+        }
+    }
+}
+// Education programs end
+
+.diploma-dialogue {
+    @include sectionPadding();
+
+    .diploma-swp {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+.partnership-project {
+    @include sectionPadding();
+
+    &__content {
+        background: #eceff6;
+        padding: 40px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        @include media(1500) {
+            padding: 30px;
+            margin-top: 45px;
+            gap: 30px;
+        }
+
+        @include media(1100) {
+            margin-top: 40px;
+            padding: 36px;
+            gap: 36px;
+        }
+
+        @include media(700) {
+            margin-top: 20px;
+            padding: 20px;
+            gap: 20px;
+        }
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 100%;
+        letter-spacing: -0.01em;
+        color: #465068;
+
+        @include media(1500) {
+            font-size: 36px;
+        }
+
+        @include media(1100) {
+            font-size: 40px;
+        }
+
+        @include media(700) {
+            font-size: 24px;
+        }
+    }
+
+    .card {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 10px;
+
+        @include media(1100) {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        @include media(700) {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 5px;
+        }
+
+        li {
+            height: 150px;
+            background: #ffffff;
+            position: relative;
+
+            @include media(1500) {
+                height: 115px;
+            }
+
+            @include media(700) {
+                height: 60px;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            
+            @include media(1500) {
+                transform: translate(-50%, -50%) scale(.75);
+            }
+            
+            @include media(700) {
+                transform: translate(-50%, -50%) scale(.4);
+            }
+            
+            @include media(500) {
+                transform: translate(-50%, -50%) scale(.5);
+            }
+            
+            @include media(380) {
+                transform: translate(-50%, -50%) scale(.6);
+            }
+        }
+    }
+
+    .text {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        margin-top: 30px;
+
+        @include media(1500) {
+            margin-top: 20px;
+        }
+
+        @include media(1100) {
+            gap: 16px;
+            margin-top: 24px;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+
+        @include media(700) {
+            margin-top: 16px;
+        }
+
+        li {
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            color: #465068;
+            
+            @include media(1500) {
+                font-size: 18px;
+            }
+
+            @include media(700) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.dialogue-leader {
+    .swp-pagination {
+        position: relative;
+        top: auto !important;
+        bottom: auto;
+        height: 6px;
+        width: 100%;
+        background: #ECEFF6;
+        border-radius: 0 !important;
+        margin-top: 40px;
+    
+        @include media(1500) {
+            margin-top: 30px;
+        }
+    
+        @include media(1100) {
+            margin-top: 40px;
+        }
+    
+        @include media(700) {
+            margin-top: 20px;
+        }
+    
+        div {
+            height: 100%;
+            background: #F92F43;
+            border-radius: 0 !important;
+            cursor: pointer;
+        }
+    }
+}
+
+.dialogue-figures {
+    .figures {
+        &-foot {
+            @include media(1100) {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+
+        &-text {
+            padding-left: 47px;
+
+            @include media(1500) {
+                padding: 0 0 0 30px;
+
+                div {
+                    padding: 0;
+                }
+            }
+
+            @include media(1100) {
+                padding: 0 36px 36px;
+            }
+
+            @include media(700) {
+                padding: 0;
+            }
+            
+            h2 {
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 100%;
+                letter-spacing: -0.01em;
+                color: #465068;
+                position: relative;
+                margin-bottom: 40px;
+                
+                @include media(1500) {
+                    font-size: 36px;
+                    margin-bottom: 33px;
+                    max-width: 370px;
+                }
+
+                @include media(1350) {
+                    max-width: 100%;
+                }
+
+                @include media(1100) {
+                    max-width: 100%;
+                    padding-top: 32px;
+                    font-size: 32px;
+                }
+
+                @include media(700) {
+                    font-size: 24px;
+                    margin-bottom: 16px;
+                    padding-top: 44px;
+                }
+
+                &::before {
+                    content: "";
+                    width: 8px;
+                    height: 8px;
+                    position: absolute;
+                    background: #F92F43;
+                    top: 15px;
+                    left: -46px;
+
+                    @include media(1500) {
+                        top: 5px;
+                        left: -22px;
+                    }
+
+                    @include media(1100) {
+                        top: 0;
+                        left: 0;
+                    }
+
+                    @include media(700) {
+                        top: 6px;
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 24px;
+
+                @include media(1500) {
+                    gap: 18px;
+                }
+
+                @include media(1100) {
+                    display: block;
+                }
+            }
+
+            li {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 120%;
+                color: #465068;
+                text-align: left;
+
+                @include media(1500) {
+                    font-size: 18px;
+                }
+
+                @include media(1100) {
+                    font-size: 16px;
+                    display: inline;
+                }
+            }
+        }
+
+        &-form {
+            p {
+                margin-bottom: 60px;
+
+                @include media(700) {
+                    margin-bottom: 40px;
+                }
+            }
+
+            .form-group {
+                margin-bottom: 20px;
+            }
+        
+            textarea.form-inp {
+                height: 157px;
+                resize: none;
+                padding-top: 19px;
+                padding-bottom: 19px;
+
+                @include media(1100) {
+                    height: 120px;
+                }
+            }
+        }
+    }
+
+}
