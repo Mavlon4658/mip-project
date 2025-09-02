@@ -296,6 +296,33 @@
     .tab-body__swp {
         padding-bottom: 0;
     }
+
+    .main-select.new-select {
+        @include media(700) {
+            display: none;
+        }
+    }
+
+    .tab-head.new-tab__head {
+        display: flex;
+        padding: 20px 20px 0 20px;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+
+        li {
+            background: #FFF;
+            padding: 19px 24px 21px 24px;
+            font-size: 20px;
+
+            &:not(:first-child) {
+                border-left: 2px solid #ECEFF6;
+            }
+
+            &:not(.active) {
+                opacity: 0.5;
+            }
+        }
+    }
 }
 
 // Education programs

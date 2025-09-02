@@ -9965,6 +9965,28 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 .education .tab-body__swp {
   padding-bottom: 0;
 }
+@media screen and (max-width: 700px) {
+  .education .main-select.new-select {
+    display: none;
+  }
+}
+.education .tab-head.new-tab__head {
+  display: flex;
+  padding: 20px 20px 0 20px;
+  width: calc(100% + 40px);
+  margin-left: -20px;
+}
+.education .tab-head.new-tab__head li {
+  background: #FFF;
+  padding: 19px 24px 21px 24px;
+  font-size: 20px;
+}
+.education .tab-head.new-tab__head li:not(:first-child) {
+  border-left: 2px solid #ECEFF6;
+}
+.education .tab-head.new-tab__head li:not(.active) {
+  opacity: 0.5;
+}
 
 .educational-programs {
   padding-bottom: 0;
