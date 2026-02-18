@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <a href="/" class="header-logo">
+                    <img src="./assets/images/logo.svg" alt="">
+                </a>
+                <div class="header-content">
+                    <div class="header-center">
+                        <ul class="lang-list">
+                            <li>
+                                <a href="#" class="active">Рус</a>
+                            </li>
+                            <li>
+                                <span>•</span>
+                            </li>
+                            <li>
+                                <a href="#">Eng</a>
+                            </li>
+                        </ul>
+                        <a href="tel:+8 (800) 555 80 04" class="phone-link">8 (800) 555 80 04</a>
+                        <ul class="header-network">
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-1.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-2.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-3.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-4.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./assets/images/header-network-5.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-right">
+                        <a href="#" class="btn-red">Хочу здесь учиться</a>
+                        <ul class="header-right__btn">
+                            <li>
+                                <button>
+                                    <img src="./assets/images/header-right-icon-1.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./assets/images/header-right-icon-2.svg" alt="">
+                                </button>
+                            </li>
+                            <li>
+                                <button>
+                                    <img src="./assets/images/header-right-icon-3.svg" alt="">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Competence -->
+        <section class="modal competence-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <button class="modal-close">
+                    <img src="./assets/images/modal-close-icon.svg" alt="">
+                </button>
+                <div class="modal-content__text competence-modal__text">
+                    <h2>Компетенции</h2>
+                    <h3>В своей работе и при организации мероприятий Центр карьеры МИП опирается на универсальные компетенции, необходимые для успешной карьеры как в организации, так и в частной практике.</h3>
+                    <p>*составлено на основе учебных планов МИП и анализа бизнес-компетенций.</p>
+                    <ul>
+                        <li>1) Системное и критическое мышление</li>
+                        <li>2) Коммуникация</li>
+                        <li>3) Разработка и реализация проектов</li>
+                        <li>4) Командная работа и лидерство</li>
+                        <li>5) Самоорганизация и саморазвитие</li>
+                        <li>6) Умение учиться</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Competence end -->
+
+        <!-- Association -->
+        <section class="modal association-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <button class="modal-close">
+                    <img src="./assets/images/modal-close-icon.svg" alt="">
+                </button>
+                <h2>Уважаемые выпускники!</h2>
+                <div class="modal-content__text association-modal__text">
+                    <p>Управление развитие карьерой и взаимодействия с выпускниками (Центр карьеры - ЦК) рады сообщить вам о создании Ассоциации выпускников, которая даст каждому выпускнику еще бОльший толчок в развитии вашей карьеры и будет укреплять связь с ВУЗом, в котором вы получили профессию.</p>
+                    <div class="association-modal__text-item">
+                        <p>Бонусы, которые дадут вам карта выпускника и принадлежность к Ассоциации:</p>
+                        <ul>
+                            <li>скидки от партнеров (кафе и рестораны, досуг, одежда обувь и пр.)</li>
+                            <li>доступ к мероприятиям ВУЗа, которые ЦК планирует реализовывать для студентов (встречи с известными психологами, проектные школы с партнерами ВУЗа, индивидуальные консультации и пр.)</li>
+                            <li>возможность стать почетным ментором ВУЗа, быть наставником для студентов</li>
+                            <li>реализацию ваших идей с поддержкой ВУЗа</li>
+                            <li>мероприятия для выпускников (квесты, квизы, корпоративы выпускников, командировки в города России и экскурсии)</li>
+                        </ul>
+                    </div>
+                    <h3>
+                        <span></span>
+                        Годовой членский взнос в Ассоциацию будет составлять 5000 руб.
+                    </h3>
+                    <div class="btns">
+                        <a href="#" class="btn-red">Оплатить</a>
+                        <a href="https://t.me/graduateMIP" target="_blank" class="btn-dark">
+                            <img src="./assets/images/telegram.svg" alt="">
+                            <span>Telegram-канал</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Association end -->
+
+        <!-- Vacancy modal -->
+        <section class="modal vacancy-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <button class="modal-close">
+                    <img src="./assets/images/modal-close-icon.svg" alt="">
+                </button>
+                <h2>Специалист по работе с документами</h2>
+                <div class="modal-content__text">
+                    <div class="text">
+                        <div class="text-item">
+                            <img src="./assets/images/map-pin.svg" alt="">
+                            <p>Московский институт психоанализа Кутузовский пр, 34с4</p>
+                        </div>
+                        <div class="text-item">
+                            <img src="./assets/images/clock.svg" alt="">
+                            <p>График работы 5/2, начало рабочего дня по согласованию</p>
+                        </div>
+                        <div class="text-item">
+                            <img src="./assets/images/user-check.svg" alt="">
+                            <p>Очное присутствие в офисе</p>
+                        </div>
+                        <div class="text-item">
+                            <img src="./assets/images/calendar.svg" alt="">
+                            <p>Проектная занятость (июнь–сентябрь)</p>
+                        </div>
+                    </div>
+                    <div class="text-2">
+                        <h4>Обязанности:</h4>
+                        <ul>
+                            <li>Обработка входящих заявлений на поступление в системе + проверка документов</li>
+                            <li>Консультация абитуриентов по документам, необходимым для поступления, по вопросам подписания документов, оплаты обучения, приказов о зачислении и пр.</li>
+                        </ul>
+                    </div>
+                    <h3>Для отклика напишите нам в Telegram <br>(укажите название вакансии и ФИО, прикрепите к сообщению своё резюме в pdf-формате)</h3>
+                    <a href="#" class="btn-red">
+                        <img src="./assets/images/telegram.svg" alt="">
+                        <span>Написать в Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Vacancy modal end -->
+
+        <!-- Internship modal -->
+        <section class="modal internship-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-content">
+                <button class="modal-close">
+                    <img src="./assets/images/modal-close-icon.svg" alt="">
+                </button>
+                <h2>Очная стажировка «Московское долголетие»</h2>
+                <div class="modal-content__text">
+                    <div class="text">
+                        <div class="text-item">
+                            <img src="./assets/images/calendar.svg" alt="">
+                            <p>Даты проведения тренингов:</p>
+                        </div>
+                        <ul>
+                            <li>Апрель: 15.17.22,24,29</li>
+                            <li>Май: 13.15.20,22.27.29</li>
+                            <li>Июнь: 3,5,10,12</li>
+                        </ul>
+                    </div>
+                    <div class="text-content">
+                        <h4>Требования к кандидатам:</h4>
+                        <ul>
+                            <li>Только выпускники и студенты с высшим психологическим образованием (“переподготовка“, не подходит)</li>
+                        </ul>
+                    </div>
+                    <div class="text-content">
+                        <h4>Дополнительная иформация:</h4>
+                        <ul>
+                            <li>По окончанию стажировки выдаётся сертификат о повышении квалификации «Психологические практики работы с людьми старшего возраста» (стажировка бесплатная!)</li>
+                            <li>В ДПО будет входить:</li>
+                            <li>обучение 7–12.04</li>
+                            <li>15 очных групповых сессий* в 10 центрах московского долголетия (вы будете работать вместе с опытным тренером)</li>
+                            <li>групповые супервизии</li>
+                        </ul>
+                    </div>
+                    <h3>Для отклика напишите нам в Telegram <br>(укажите название вакансии и ФИО, прикрепите к сообщению своё резюме в pdf-формате)</h3>
+                    <a href="#" class="btn-red">
+                        <img src="./assets/images/telegram.svg" alt="">
+                        <span>Написать в Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Internship modal end -->
+
+        <!-- Text modal -->
+        <section class="text-modal">
+            <div class="text-modal__bg"></div>
+            <div class="container">
+                <div class="text-modal__content">
+                    <div class="text-modal__head">
+                        <h2>Читать полностью</h2>
+                        <button>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.707092 0.707031L18.7071 18.707" stroke="#465068" stroke-width="2" />
+                                <path d="M18.7071 0.707031L0.707092 18.707" stroke="#465068" stroke-width="2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <!-- Text here -->
+                    <div class="demo-text"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Text modal end -->
+
+        <main>
+
+            <!-- Breadcrumb -->
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li>
+                        <a href="#">Проекты</a>
+                    </li>
+                    <li>
+                        <svg width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.18306 7.63246L3.46592 4.34966L0.18306 1.06692C-0.06102 0.82284 -0.06102 0.42709 0.18306 0.183C0.42715 -0.061 0.8229 -0.061 1.06702 0.183L4.79172 3.90775C4.90892 4.025 4.97472 4.18392 4.97472 4.34966C4.97472 4.51546 4.90892 4.67446 4.79172 4.79166L1.06702 8.51636C0.8229 8.76046 0.42715 8.76046 0.18306 8.51636C-0.06102 8.27226 -0.06102 7.87656 0.18306 7.63246Z" fill="#465068" />
+                        </svg>
+                    </li>
+                    <li>
+                        <a href="#">Диалог поколений</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Breadcrumb end -->
+
+            <!-- Projects home -->
+            <section class="projects-home">
+                <div class="container">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide projects-home__card">
+                                <div class="projects-home__card-content">
+                                    <div class="projects-home__card-text">
+                                        <h2>Диалог поколений: услышать друг друга</h2>
+                                        <p>На встречах участники освоят техники для разрешения споров и найдут новый способ передавать опыт молодому поколению, чтобы общение стало источником радости и настоящей поддержкой.</p>
+                                    </div>
+                                    <a href="#" class="btn-red">Узнать подробности</a>
+                                </div>
+                                <div class="main-img">
+                                    <img src="./assets/images/projects-home-card-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide projects-home__card">
+                                <div class="projects-home__card-content">
+                                    <div class="projects-home__card-text">
+                                        <h2>Активные меры содействия занятости</h2>
+                                        <p>На рынок труда привлекают новых работников, в частности обучают <br>востребованным профессиям.</p>
+                                    </div>
+                                    <a href="#" class="btn-red">Узнать подробности</a>
+                                </div>
+                                <div class="main-img">
+                                    <img src="./assets/images/projects-home-card-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide projects-home__card">
+                                <div class="projects-home__card-content">
+                                    <div class="projects-home__card-text">
+                                        <h2>Методики работы с детским коллективом</h2>
+                                        <p>На современном этапе развития школьной педагогики достаточно очевидно прослеживается тенденция устранения педагогов от воспитательной и развивающей составляющих процесса педагогической деятельности.</p>
+                                    </div>
+                                    <a href="#" class="btn-red">Узнать подробности</a>
+                                </div>
+                                <div class="main-img">
+                                    <img src="./assets/images/projects-home-card-3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swp-navigation">
+                        <button class="swp-prev">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.1762 17.6437L5.18868 11.9164H21.0834V10.0831H5.18869L11.1762 4.35593L9.82087 3.05957L1.51978 10.9998L9.82087 18.94L11.1762 17.6437Z" fill="white" />
+                            </svg>
+                        </button>
+                        <button class="swp-next">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8238 4.35631L17.8113 10.0836L1.91661 10.0836L1.91661 11.9169L17.8113 11.9169L11.8238 17.6441L13.1791 18.9404L21.4802 11.0002L13.1791 3.05996L11.8238 4.35631Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects home end -->
+
+            <!-- Help -->
+            <section class="help projects-help">
+                <div class="container">
+                    <h2 class="section_title">
+                        <span></span>
+                        Направления проектов
+                    </h2>
+                    <ul class="help-card__wrap">
+                        <li class="help-card">
+                            <h3>Социальное  благополучие</h3>
+                            <p>Выстраиваем индивидуальный карьерный трек студентов и выпускников вместе с карьерным коучем и hr-консультантом.</p>
+                            <img src="./assets/images/help-card-icon-1.svg" alt="" class="bg-img">
+                        </li>
+                        <li class="help-card">
+                            <h3>Психологическая поддержка</h3>
+                            <p>Организуем мероприятия, опираясь на <a href="#" class="competence-modal__open">компетенции <img src="./assets/images/interrogation.svg" alt=""></a> , необходимые специалистам вашего направления.</p>
+                        </li>
+                        <li class="help-card">
+                            <h3>Корпоративная культура</h3>
+                            <p>Регулярно пополняем и обновляем список актуальных вакансий от партнёров Центра Карьеры.</p>
+                            <img src="./assets/images/help-card-icon-2.svg" alt="" class="bg-img">
+                        </li>
+                        <li class="help-card">
+                            <h3>Научные исследования</h3>
+                            <p>Выдаём карту со скидками от партнёров: в кафе, <br> на аренду машин, получение мерча МИП и пр.</p>
+                        </li>
+                        <li class="help-card">
+                            <h3>Международное сотрудничество</h3>
+                            <p>Мероприятия, нетворкинг, менторство, скидки от партнёров и многое другое в сообществе наших выпускников. <a href="#" class="association-modal__open">Подробнее об ассоциации</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Help end -->
+
+            <!-- about -->
+            <section class="about projects-about">
+                <div class="container about-container">
+                    <div class="about_text">
+                        <h6>
+                            Миссия и цели
+                        </h6>
+                        <div class="about_main_text">
+                            <div class="about_content">
+                                <p>Московский институт психоанализа активно реализует проекты федерального и регионального уровня в сотрудничестве с правительством Москвы и представителями бизнеса. Наши инициативы направлены на улучшение социального климата населения, укрепление корпоративной культуры и поддержку различных социальных программ. </p>
+                                <p>Мы стремимся к созданию благоприятной среды для развития и благополучия каждого человека.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_img">
+                        <button class="about_play">
+                            <svg width="30" height="36" viewBox="0 0 30 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M30 17.7109L-3.43725e-06 35.2109L-1.90735e-06 0.210936L30 17.7109Z" fill="white"/>
+                            </svg>
+                        </button>
+                        <img src="./assets/images/about_img.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- about -->
+
+            <!-- Direction -->
+            <section class="direction projects-direction">
+                <div class="container direction-container">
+                    <h2 class="section_title">
+                        <span></span>
+                        Проекты института
+                    </h2>
+                    <div class="tab-head">
+                        <a href="#" class="active">Актуальные</a>
+                        <a href="#">2025</a>
+                        <a href="#">2024</a>
+                        <a href="#">2023</a>
+                        <a href="#">2022</a>
+                    </div>
+                    <div class="direction-card__wrap">
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-2.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>2026 год</p>
+                                <h3>Московское долголетие</h3>
+                                <ul>
+                                    <li>
+                                        <b>Формы обучения:</b> очно, заочно, дистанционно
+                                    </li>
+                                    <li>
+                                        <b>О направлении:</b> Управление персоналом - направление, которое имеет большие перспективы. Сегодня hr-специалисты востребованы во всех сферах деятельности. В настоящее время на первом месте в любой успешной компании располагаются именно человеческие ресурсы: мотивация персонала, причастность к общему делу, развитие и внедрение корпоративной культуры. Проактивные руководители понимают, что необходимо вкладываться в персонал и его развитие, ведь именно люди (сотрудники) обеспечивают бесперебойную работу компании и ее рост.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    Совместно с Департаментом труда и социальной защиты населения города Москвы
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-2.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>2026 год</p>
+                                <h3>Московское долголетие</h3>
+                                <ul>
+                                    <li>
+                                        <b>Формы обучения:</b> очно, заочно, дистанционно
+                                    </li>
+                                    <li>
+                                        <b>О направлении:</b> Управление персоналом - направление, которое имеет большие перспективы. Сегодня hr-специалисты востребованы во всех сферах деятельности. В настоящее время на первом месте в любой успешной компании располагаются именно человеческие ресурсы: мотивация персонала, причастность к общему делу, развитие и внедрение корпоративной культуры. Проактивные руководители понимают, что необходимо вкладываться в персонал и его развитие, ведь именно люди (сотрудники) обеспечивают бесперебойную работу компании и ее рост.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    Совместно с Департаментом труда и социальной защиты населения города Москвы
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-2.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>2026 год</p>
+                                <h3>Московское долголетие</h3>
+                                <ul>
+                                    <li>
+                                        <b>Формы обучения:</b> очно, заочно, дистанционно
+                                    </li>
+                                    <li>
+                                        <b>О направлении:</b> Управление персоналом - направление, которое имеет большие перспективы. Сегодня hr-специалисты востребованы во всех сферах деятельности. В настоящее время на первом месте в любой успешной компании располагаются именно человеческие ресурсы: мотивация персонала, причастность к общему делу, развитие и внедрение корпоративной культуры. Проактивные руководители понимают, что необходимо вкладываться в персонал и его развитие, ведь именно люди (сотрудники) обеспечивают бесперебойную работу компании и ее рост.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    Совместно с Департаментом труда и социальной защиты населения города Москвы
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="direction-card">
+                            <img src="./assets/images/direction-card-2.png" alt="" class="bg-img">
+                            <div class="direction-card__head">
+                                <p>2026 год</p>
+                                <h3>Московское долголетие</h3>
+                                <ul>
+                                    <li>
+                                        <b>Формы обучения:</b> очно, заочно, дистанционно
+                                    </li>
+                                    <li>
+                                        <b>О направлении:</b> Управление персоналом - направление, которое имеет большие перспективы. Сегодня hr-специалисты востребованы во всех сферах деятельности. В настоящее время на первом месте в любой успешной компании располагаются именно человеческие ресурсы: мотивация персонала, причастность к общему делу, развитие и внедрение корпоративной культуры. Проактивные руководители понимают, что необходимо вкладываться в персонал и его развитие, ведь именно люди (сотрудники) обеспечивают бесперебойную работу компании и ее рост.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="direction-card__bottom">
+                                <p>
+                                    Совместно с Департаментом труда и социальной защиты населения города Москвы
+                                </p>
+                                <div class="direction-card__btn">
+                                    <a href="#" class="btn-red">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Direction end -->
+
+            <!-- Leader -->
+            <section class="leader projects-leader">
+                <div class="container">
+                    <h2 class="section_title">
+                        <span></span>
+                        Авторы проектов
+                    </h2>
+                    <div class="projects-leader__swp">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/leader-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Штукарева Светлана Владимировна</h3>
+                                                <p>Академический руководитель программы</p>
+                                                <a href="#" class="btn-white">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <button class="btn-white">Читать полностью</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/leader-card-2.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Штукарева Светлана Владимировна</h3>
+                                                <p>Академический руководитель программы</p>
+                                                <a href="#" class="btn-white">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <button class="btn-white">Читать полностью</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/leader-card-1.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Штукарева Светлана Владимировна</h3>
+                                                <p>Академический руководитель программы</p>
+                                                <a href="#" class="btn-white">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <button class="btn-white">Читать полностью</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="leader-card">
+                                        <div class="leader-card__left">
+                                            <div class="main-img">
+                                                <img src="./assets/images/leader-card-2.png" alt="">
+                                            </div>
+                                            <div class="leader-card__left-text">
+                                                <h3>Штукарева Светлана Владимировна</h3>
+                                                <p>Академический руководитель программы</p>
+                                                <a href="#" class="btn-white">Подробнее</a>
+                                            </div>
+                                        </div>
+                                        <div class="leader-card__right">
+                                            <ul class="leader-card__right-list">
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <h3>Занимаемая должность</h3>
+                                                    <p>Руководитель Высшей школы логотерапии Московского института психоанализа, почетный член Международной Ассоциации логотерапии и экзистенциального анализа, член Совета Института Виктора Франкла (Вена)</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Стаж работы</h3>
+                                                    <p>30* лет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Образование</h3>
+                                                    <p>Российский государственный гуманитарный университет</p>
+                                                </li>
+                                                <li>
+                                                    <h3>Награды и достижения</h3>
+                                                    <ul>
+                                                        <li>Лауреат премии Правительства Москвы в области культуры </li>
+                                                        <li>Благодарность от Президента РФ В.В. Путина за активное участие в организации и проведении общественных проектов, направленных на социальную поддержку граждан в период распространения</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                            <button class="btn-white">Читать полностью</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swp-navigation">
+                        <button class="swp-prev">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.1762 17.6437L5.18868 11.9164H21.0834V10.0831H5.18869L11.1762 4.35593L9.82087 3.05957L1.51978 10.9998L9.82087 18.94L11.1762 17.6437Z" fill="white" />
+                            </svg>
+                        </button>
+                        <button class="swp-next">
+                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8238 4.35631L17.8113 10.0836L1.91661 10.0836L1.91661 11.9169L17.8113 11.9169L11.8238 17.6441L13.1791 18.9404L21.4802 11.0002L13.1791 3.05996L11.8238 4.35631Z" fill="white" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Leader end -->
+
+            <!-- Partnership project -->
+            <section class="partnership-project projects-partnership">
+                <div class="container">
+                    <h2 class="section_title">
+                        <span></span>
+                        Наши партнеры
+                    </h2>
+                    <ul class="card">
+                        <li>
+                            <img src="./assets/images/partnership-project-card-1.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-2.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-3.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-4.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-5.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-6.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-7.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-8.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-9.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-10.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-11.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-12.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-10.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-11.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="./assets/images/partnership-project-card-12.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Partnership project end -->
+
+            <!-- Projects feedback -->
+            <section class="projects-feedback">
+                <div class="container projects-feedback__cotnainer">
+                    <h2 class="section_title">
+                        <span></span>
+                        Отзывы участников
+                    </h2>
+                    <div class="projects-feedback__swp">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide feedback-card">
+                                    <div class="feedback-card__head">
+                                        <img src="./assets/images/feedback-avatar-1.png" alt="" class="main-img">
+                                        <div>
+                                            <h3>Светлана Малогина</h3>
+                                            <p>Бакалавриат МИП, Психология; <br>ДПО «Клиническая психология»</p>
+                                        </div>
+                                    </div>
+                                    <ul class="feedback-card__text">
+                                        <li class="feedback-card__text-item">
+                                            <h3>Опыт работы</h3>
+                                            <ul>
+                                                <li>Частное консультирование, интегративный подход, 4 года.</li>
+                                            </ul>
+                                        </li>
+                                        <li class="feedback-card__text-item">
+                                            <h3>Отзыв о стажировке</h3>
+                                            <ul>
+                                                <li>В 2025 году я прошла стажировку в программе «Московское долголетие», организованную центром карьеры МИП. Это был очень интересный опыт, состоял он в консультировании людей старшего возраста. </li>
+                                                <li>Интересно было погрузиться именно в работу с возрастными клиентам! Организация стажировки на высшем уровне! Обучение, супервизии, постоянная обратная связь от куратора по любым вопросам! </li>
+                                                <li>Благодарна за полученный опыт!</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <button class="btn-white">Читать полностью</button>
+                                </div>
+                                <div class="swiper-slide feedback-card">
+                                    <div class="feedback-card__head">
+                                        <img src="./assets/images/feedback-avatar-2.png" alt="" class="main-img">
+                                        <div>
+                                            <h3>Арина Фролова</h3>
+                                            <p>Студент 1-ого курса МИП</p>
+                                        </div>
+                                    </div>
+                                    <ul class="feedback-card__text">
+                                        <li class="feedback-card__text-item">
+                                            <h3>Опыт работы</h3>
+                                            <ul>
+                                                <li>Без опыта</li>
+                                            </ul>
+                                        </li>
+                                        <li class="feedback-card__text-item">
+                                            <h3>Отзыв о стажировке</h3>
+                                            <ul>
+                                                <li>Стажировка к которой я приступила « Система современной профориентационной работы с подростками с инвалидностью и ОВЗ», стала для меня совершенно новым и полезным опытом. Во время прохождения стажировки, я испытала разнообразный спектр эмоций. Первый месяц были трудности с усваиванием материала и уверенностью внутри себя, но благодарю профессиональному подходу наставников и кураторов с каждой коуч — сессией я становилась уверенным и компетентным стажёром. Благодаря данной стажировке, я поняла какие направления, методы мне интересны и требуют более внимательного изучения. Уверена, что это только начало и мой профессиональный путь в верном направлении.</li>
+                                                <li>Благодарю всю команду профессионалов за бесценный вклад в нас и в проект!</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <button class="btn-white">Читать полностью</button>
+                                </div>
+                                <div class="swiper-slide feedback-card">
+                                    <div class="feedback-card__head">
+                                        <img src="./assets/images/feedback-avatar-3.png" alt="" class="main-img">
+                                        <div>
+                                            <h3>Наталья Ершова</h3>
+                                            <p>Когнитивно-поведенческая психотерапия в практике психолога; <br>Магистратура МИП, Психология</p>
+                                        </div>
+                                    </div>
+                                    <ul class="feedback-card__text">
+                                        <li class="feedback-card__text-item">
+                                            <h3>Опыт работы</h3>
+                                            <ul>
+                                                <li>Более 150 ч.</li>
+                                            </ul>
+                                        </li>
+                                        <li class="feedback-card__text-item">
+                                            <h3>Отзыв о стажировке</h3>
+                                            <ul>
+                                                <li>Благодаря программе моего горячо любимого института (МИП) мне удалось пройти стажировку в Московском Долголетии в 2025 году. Сначала мы проходили подготовку + огромный выбор литературы в личных кабинетах. Далее непосредственно стажировка: лично мне довелось поработать с клиентами филиалов Нагатино — Садовники и Вешняки. Благодарю клиентов за доверие и за совместную работу, не перестаю восхищаться их силами, вдохновением и стремлением двигаться вперёд и развиваться! Работать было чрезвычайно интересно и увлекательно! Также отдельно хочу поблагодарить кураторов, которые помогали нам наладить работу: Наталья Васильевна, Дина, спасибо вам огромное! Дорогой институт и вам огромная благодарность! А ещё была еженедельная супервизия на протяжении всей стажировки, Альбина, ваш вклад бесценен!</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <button class="btn-white">Читать полностью</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swp-navigation">
+                            <button class="swp-prev">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.1762 17.6437L5.18868 11.9164H21.0834V10.0831H5.18869L11.1762 4.35593L9.82087 3.05957L1.51978 10.9998L9.82087 18.94L11.1762 17.6437Z" fill="white" />
+                                </svg>
+                            </button>
+                            <button class="swp-next">
+                                <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.8238 4.35631L17.8113 10.0836L1.91661 10.0836L1.91661 11.9169L17.8113 11.9169L11.8238 17.6441L13.1791 18.9404L21.4802 11.0002L13.1791 3.05996L11.8238 4.35631Z" fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects feedback end -->
+
+            <!-- Figures -->
+            <section class="figures projects-figures">
+                <div class="container">
+                    <div class="figures-foot">
+                        <div class="figures-text">
+                            <div class="main-img">
+                                <img src="./assets/images/figures-foot-card-3.png" alt="">
+                            </div>
+                            <div>
+                                <h3>Проектный офис МИП</h3>
+                                <ul>
+                                    <li>Это динамичное пространство, где рождаются и воплощаются в жизнь самые смелые и инновационные идеи. Мы создаем условия для свободного обмена мыслями, сотрудничества и экспериментов, объединяя талантливых профессионалов из различных областей. </li>
+                                    <li>Наша миссия – вдохновлять и поддерживать креативные инициативы, способствуя их успешной реализации и внедрению.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="figures-form">
+                            <h3>Хотите предложить проект?</h3>
+                            <p>
+                                Мы всегда рады вашим отзывам и предложениям. <br>
+                                Пожалуйста, заполните форму, чтобы оставить заявку или задать вопрос.
+                            </p>
+                            <div class="form-group">
+                                <input type="text" placeholder="Ваше имя" class="form-inp">
+                                <input type="tel" placeholder="+7 (000) 000-00-00" class="form-inp">
+                                <input type="email" placeholder="Электронная почта" class="form-inp">
+                                <textarea placeholder="Опишите запрос" class="form-inp"></textarea>
+                            </div>
+                            <div class="form-checkbox__wrap">
+                                <div class="form-checkbox">
+                                    <input type="checkbox" name="" id="">
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                            <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"/>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <p>Я подтверждаю, что ознакомился с <a href="#">Политикой конфиденциальности</a> и <a href="#">Правилами обработки персональных данных</a></p>
+                            </div>
+                            <button class="btn-red">Отправить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Figures end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container"></div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
