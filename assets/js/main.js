@@ -801,3 +801,50 @@ if (workLifeBlocks.length) {
         }
     })
 }
+
+const workFaqAccordions = document.querySelectorAll('.work-faq__card');
+
+if (workFaqAccordions.length) {
+    workFaqAccordions.forEach((item) => {
+        const header = item.querySelector('.work-faq__card-btn');
+        const content = item.querySelector('.work-faq__card-body');
+    
+        header.addEventListener('click', () => {
+            item.classList.toggle('active')
+            content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+            workFaqAccordions.forEach(el => {
+                if (item != el) {
+                    el.classList.remove('active');
+                    el.querySelector('.work-faq__card-body').style.maxHeight = null;
+                }
+            })
+        });
+    });
+}
+
+const workProgramSwp = new Swiper('.work-program__swp', {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    initialSlide: 0,
+    breakpoints: {
+        1500: {
+            slidesPerView: 1,
+            spaceBetween: 52,
+            initialSlide: 1,
+        },
+        1200: {
+            slidesPerView: 1,
+            spaceBetween: 29,
+            initialSlide: 1,
+        },
+        700: {
+            slidesPerView: 1,
+            spaceBetween: 16,
+            initialSlide: 1,
+        }
+    },
+    pagination: {
+        el: ".work-program .swp-pagination",
+        clickable: true,
+    }
+})
