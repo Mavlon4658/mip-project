@@ -598,3 +598,206 @@ if (feedbackCard.length) {
         }
     })
 }
+
+
+
+// -------------- College js -------------- //
+
+const collegeMbSwp = new Swiper('.college-life .mb-swiper', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: '.college-life .swp-btns__next',
+        prevEl: '.college-life .swp-btns__prev',
+    }
+})
+
+const collegeSwp = new Swiper('.college-life__swp', {
+    grabCursor: true,
+    effect: "creative",
+    spaceBetween: 20,
+    creativeEffect: {
+        limitProgress: 10,
+        prev: {
+            translate: [0, 0, 0],
+            opacity: 0,
+        },
+        next: {
+            translate: ["calc(100% + 20px)", 0, 0],
+            opacity: 0.5,
+        },
+    },
+    navigation: {
+        nextEl: '.college-life .swp-btns__next',
+        prevEl: '.college-life .swp-btns__prev',
+    }
+})
+
+let collegeTreaningSwpInit = false;
+let collegeTreaningSwp;
+function collegeTreaningSwpFunction() {
+    if (window.innerWidth <= 700) {
+        if (!collegeTreaningSwpInit) {
+            collegeTreaningSwpInit = true;
+            collegeTreaningSwp = new Swiper(".college-treaning .swiper", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".college-treaning .swp-btns__next",
+                    prevEl: ".college-treaning .swp-btns__prev",
+                }
+            });
+        }
+    } else if (collegeTreaningSwpInit) {
+        collegeTreaningSwp.destroy();
+        collegeTreaningSwpInit = false;
+    }
+}
+collegeTreaningSwpFunction();
+window.addEventListener("resize", collegeTreaningSwpFunction);
+
+const collegeTeacherSwp = new Swiper('.college-teacher__swp', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    watchSlidesProgress: true,
+    breakpoints: {
+        1500: {
+            slidesPerView: 3,
+        }
+    },
+    navigation: {
+        nextEl: '.college-teacher .swp-btns__next',
+        prevEl: '.college-teacher .swp-btns__prev',
+    }
+})
+
+const collegeCareerswp = new Swiper('.college-career__swp', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    loopedSlides: 20,
+    loop: true,
+    speed: 5000,
+    autoplay: {
+        delay: 0,
+        disableOnInteraction: false,
+    },
+    freeModeMomentum: true,
+    allowTouchMove: false,
+})
+
+const collegeAppealSwp = new Swiper('.college-appeal__swp', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    breakpoints: {
+        1500: {
+            slidesPerView: 3,
+        }
+    },
+    navigation: {
+        nextEl: '.college-appeal .swp-btns__next',
+        prevEl: '.college-appeal .swp-btns__prev',
+    }
+})
+
+const faqAccordions = document.querySelectorAll('.college-faq .faq-accordion');
+
+if (faqAccordions.length) {
+    faqAccordions.forEach((item) => {
+        const accHeader = item.querySelector('.faq-accordion__btn');
+        const accBody = item.querySelector('.faq-accordion__body-wrap');
+    
+        accHeader.addEventListener('click', () => {
+            item.classList.toggle('active');
+            accBody.style.maxHeight = accBody.style.maxHeight ? null : accBody.scrollHeight + 'px';
+        });
+    });
+}
+
+let collegeEducationSwpInit = false;
+let collegeEducationSwp;
+function collegeEducationSwpFunction() {
+    if (window.innerWidth <= 700) {
+        if (!collegeEducationSwpInit) {
+            collegeEducationSwpInit = true;
+            collegeEducationSwp = new Swiper(".college-education__swp", {
+                slidesPerView: "auto",
+                spaceBetween: 10,
+                navigation: {
+                    nextEl: ".college-education .swp-btns__next",
+                    prevEl: ".college-education .swp-btns__prev",
+                }
+            });
+        }
+    } else if (collegeEducationSwpInit) {
+        collegeEducationSwp.destroy();
+        collegeEducationSwpInit = false;
+    }
+}
+collegeEducationSwpFunction();
+window.addEventListener("resize", collegeEducationSwpFunction);
+
+const workAboutAccordions = document.querySelectorAll('.work-about__accordion');
+
+if (workAboutAccordions.length) {
+    workAboutAccordions.forEach((item) => {
+        const header = item.querySelector('.work-about__accordion-btn');
+        const content = item.querySelector('.work-about__accordion-body');
+    
+        header.addEventListener('click', () => {
+            item.classList.toggle('active')
+            content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + 'px';
+            workAboutAccordions.forEach(el => {
+                if (item != el) {
+                    el.classList.remove('active');
+                    el.querySelector('.work-about__accordion-body').style.maxHeight = null;
+                }
+            })
+        });
+    });
+}
+
+const contentBlockLeftItem = document.querySelectorAll('.content-block__left-item');
+const contentBlockRight = document.querySelectorAll('.content-block__right-head .content-block__body');
+
+if (contentBlockLeftItem.length) {
+    contentBlockLeftItem.forEach((el, elIdx) => {
+        const btn = el.querySelector('.content-block__btn');
+        btn.onclick = () => {
+            contentBlockLeftItem.forEach(item => {
+                if (el == item) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            })
+            contentBlockRight.forEach((item, idx) => {
+                if (idx == elIdx) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const workLifeBlocks = document.querySelectorAll('.work-life .content-block');
+let blockIdx = 0
+if (workLifeBlocks.length) {
+    workLifeBlocks.forEach(el => {
+        const btn = el.querySelector('.btn-red');
+        btn.onclick = () => {
+            blockIdx += 1;
+            if (blockIdx == workLifeBlocks.length) {
+                blockIdx = 0;
+            }
+            workLifeBlocks.forEach((item, idx) => {
+                if (blockIdx == idx) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            })
+        }
+    })
+}
