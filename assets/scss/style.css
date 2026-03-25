@@ -12882,6 +12882,9 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+.college-career__content .content-block:not(.active) {
+  display: none !important;
+}
 .college-career__content .content-block__text {
   display: flex;
   flex-direction: column;
@@ -14201,6 +14204,9 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
     gap: 9px;
   }
 }
+.work-us .content-block__right:not(.active) {
+  display: none !important;
+}
 @media screen and (max-width: 700px) {
   .work-us .content-block__right-head {
     display: none;
@@ -14338,6 +14344,33 @@ button, select, input, textarea, li, div, p, h1, h2, h3, h4, h5, h6 {
 }
 @media screen and (max-width: 700px) {
   .work-life__right img.sm {
+    display: block;
+  }
+}
+.work-life__right .img-block__2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 48px 14px;
+}
+@media screen and (max-width: 700px) {
+  .work-life__right .img-block__2 {
+    gap: 12px 14px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.work-life__right .img-block__2 img {
+  display: block;
+}
+@media screen and (max-width: 700px) {
+  .work-life__right .img-block__2 .empty-block:not(.sm) {
+    display: none;
+  }
+}
+.work-life__right .img-block__2 .empty-block.xl {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .work-life__right .img-block__2 .empty-block.xl {
     display: block;
   }
 }

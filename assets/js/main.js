@@ -671,6 +671,31 @@ const collegeTeacherSwp = new Swiper('.college-teacher__swp', {
     }
 })
 
+const collegeCareerTabBtn = document.querySelectorAll('.college-career__content ul li a');
+const collegeCareerTabBlock = document.querySelectorAll('.college-career__content .content-block');
+
+if (collegeCareerTabBtn.length) {
+    collegeCareerTabBtn.forEach((btn, btnID) => {
+        btn.onclick = e => {
+            e.preventDefault();
+            collegeCareerTabBlock.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+            collegeCareerTabBtn.forEach((el, elID) => {
+                if (elID == btnID) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
 const collegeCareerswp = new Swiper('.college-career__swp', {
     slidesPerView: 'auto',
     spaceBetween: 20,
@@ -756,8 +781,8 @@ if (workAboutAccordions.length) {
     });
 }
 
-const contentBlockLeftItem = document.querySelectorAll('.content-block__left-item');
-const contentBlockRight = document.querySelectorAll('.content-block__right-head .content-block__body');
+const contentBlockLeftItem = document.querySelectorAll('.work-us .content-block__left-item');
+const contentBlockRight = document.querySelectorAll('.work-us .content-block__right');
 
 if (contentBlockLeftItem.length) {
     contentBlockLeftItem.forEach((el, elIdx) => {

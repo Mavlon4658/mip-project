@@ -1527,6 +1527,10 @@
                 grid-template-columns: repeat(1, 1fr);
             }
 
+            &:not(.active) {
+                display: none !important;
+            }
+
             &__text {
                 display: flex;
                 flex-direction: column;
@@ -2840,6 +2844,10 @@
                 gap: 9px;
             }
 
+            &:not(.active) {
+                display: none !important;
+            }
+
             &-head {
                 @include media(700) {
                     display: none;
@@ -2982,6 +2990,39 @@
 
                 @include media(700) {
                     display: block;
+                }
+            }
+        }
+
+        .img-block {
+            &__2 {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 48px 14px;
+
+                @include media(700) {
+                    gap: 12px 14px;
+                    grid-template-columns: repeat(4, 1fr);
+                }
+
+                img {
+                    display: block;
+                }
+
+                .empty-block {
+                    @include media(700) {
+                        &:not(.sm) {
+                            display: none;
+                        }
+                    }
+
+                    &.xl {
+                        display: none;
+
+                        @include media(700) {
+                            display: block;
+                        }
+                    }
                 }
             }
         }
